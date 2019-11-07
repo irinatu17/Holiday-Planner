@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Boostrap, CSS,  -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.1.1/css/hover-min.css" type="text/css" />
+
+    <script src="https://kit.fontawesome.com/baccdfdbc9.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css?family=Amatic+SC:400,700|Lato:100,100i,400,700,900|Open+Sans:300,300i,400,600,700,800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css" type="text/css" />
+
+
+    <title>Holiday Planner</title>
+</head>
+
+<body>
+    <div id="body-container">
+        <header>
+            <nav class="navbar navbar-expand-lg navbar-expand-sm navbar-light header-fixed transperant">
+                <a class="navbar-brand lead  navbar-link" href="index.html">TravelWithLove <i class="fas fa-globe-europe"></i></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="nav navbar-nav ">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">About us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Travel packages</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link mr-2 d-sm-none d-block" href="/signup" data-toggle="modal" data-target="#signUpModal">Sign Up</a>
+                        </li>
+                    </ul>
+                    <div class="d-none d-md-block">
+                        <a href="/login" class="btn btn-red " data-toggle="modal" data-target="#signUpModal">Sign Up</a>
+
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <div class="home-wrapper">
+
+            <section class="container-fluid home-container">
+                <div class="search-container search-content text-center">
+                    <div class="row">
+                        <div class="col"></div>
+                        <div class="col-10 mt-4">
+                            <h2>Find your best holiday destination</h1>
+                        </div>
+                        <div class="col"></div>
+                    </div>
+                    <div class="row">
+                        <div id="locationField" class="col-md-12   mt-4">
+                            <input id="searchBox" class="controls" type="text" placeholder="Where are you going?" />
+                            <button type="submit" value="" id="search-action" title="search"><i class="fas fa-search"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <div class="row">
+                    <div class="col">
+                    </div>
+                    <div class=" col-4 btn-group search-buttons" role="group" aria-label="Basic example">
+                        <button type="button" id="accomodation" class="btn btn-secondary search-buttons-item placeType"><i class="fas fa-bed"></i> <br/>Hotels</button>
+                        <button type="button"  id="restaurant" class="btn btn-secondary search-buttons-item placeType"><i class="fas fa-utensils"></i> <br/> Restaurants</button>
+                        <button type="button"  id="attraction" class="btn btn-secondary search-buttons-item placeType"><i class="fas fa-landmark"></i><br/>Attractions</button>
+                        <button type="button"  id="store" class="btn btn-secondary search-buttons-item placeType"><i class="fas fa-shopping-cart"></i><br/>Shopping</button>
+                    </div>
+                    <div class="col">
+                    </div>
+                </div>
+                <div class="row mt-0">
+                    <div class="col">
+                    </div>
+                    <div class="col-8">
+                        <div id="map"></div>
+                    </div>
+                    <div class="col">
+                    </div>
+                </div>
+            </section>
+            <section>
+                <div class="row">
+                    <div class="col-12 text-center">
+                        <h3> Travel packages</h3>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-4">
+                        1
+                    </div>
+                    <div class="col-4">
+                        2
+                    </div>
+                    <div class="col-4">
+                        3
+                    </div>
+                </div>
+            </section>
+        </div>
+        <!-- Footer -->
+        <footer>
+            <div id="footer" class="padding-top">
+                <div class="container">
+
+                </div>
+            </div>
+        </footer>
+
+        <!-- Info window, that appears by clicking on the marker -->
+
+        <div style="display: none">
+            <div id="info-content">
+                <table>
+                    <tr id="iw-url-row" class="iw_table_row">
+                        <td id="iw-icon" class="iw_table_icon"></td>
+                        <td id="iw-url"></td>
+                    </tr>
+                    <tr id="iw-address-row" class="iw_table_row">
+                        <td class="iw_attribute_name">Address:</td>
+                        <td id="iw-address"></td>
+                    </tr>
+                    <tr id="iw-phone-row" class="iw_table_row">
+                        <td class="iw_attribute_name">Telephone:</td>
+                        <td id="iw-phone"></td>
+                    </tr>
+                    <tr id="iw-rating-row" class="iw_table_row">
+                        <td class="iw_attribute_name">Rating:</td>
+                        <td id="iw-rating"></td>
+                    </tr>
+                    <tr id="iw-website-row" class="iw_table_row">
+                        <td class="iw_attribute_name">Website:</td>
+                        <td id="iw-website"></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+        <!-- jQuery, Popper.js, Bootstrap JS and local JS scripts -->
+
+
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+        <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCpJ98gNHZmIBJJqgk_tohr-PflcqO9akY&callback=initMap&libraries=places"></script>
+        <script src="assets/js/maps.js"></script>
+        <script src="assets/js/sendemail.js"></script>
+    </div>
+</body>
+
+</html>
