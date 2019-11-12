@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.1.1/css/hover-min.css" type="text/css" />
 
     <script src="https://kit.fontawesome.com/baccdfdbc9.js" crossorigin="anonymous"></script>
-    <link href="https://fonts.googleapis.com/css?family=Amatic+SC:400,700|Lato:100,100i,400,700,900|Open+Sans:300,300i,400,600,700,800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Amatic+SC:400,700|Nanum+Pen+Script:400,700|Lato:100,100i,400,700,900|Open+Sans:300,300i,400,600,700,800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/style.css" type="text/css" />
 
 
@@ -44,7 +44,6 @@
                     </ul>
                     <div class="d-none d-md-block">
                         <a href="/login" class="btn btn-red " data-toggle="modal" data-target="#signUpModal">Sign Up</a>
-
                     </div>
                 </div>
             </nav>
@@ -62,24 +61,20 @@
                     </div>
                     <div class="row">
                         <div id="locationField" class="col-md-12   mt-4">
-                            <input id="searchBox" class="controls" type="text" placeholder="Where are you going?" />
-                            <button type="submit" value="" id="search-action" title="search"><i class="fas fa-search"></i></button>
-                        </div>
+                            <input id="searchPlace" class="controls" type="text" placeholder="Where are you going?" /> </div>
                     </div>
                 </div>
             </section>
             <section>
                 <div class="row">
-                    <div class="col">
+                    <div class="col"></div>
+                    <div class="col-4 btn-group search-buttons">
+                        <div class="placeType"><button type="button" id="accommodation" class="btn btn-secondary "><i class="fas fa-bed"></i> <br/>Hotels</button></div>
+                        <div class="placeType"><button type="button" id="restaurant" class="btn btn-secondary "><i class="fas fa-utensils"></i> <br/> Restaurants</button></div>
+                        <div class="placeType"><button type="button" id="attraction" class="btn btn-secondary"><i class="fas fa-landmark"></i><br/>Attractions</button></div>
+                        <div class="placeType"><button type="button" id="store" class="btn btn-secondary"><i class="fas fa-shopping-cart"></i><br/>Shopping</button></div>
                     </div>
-                    <div class=" col-4 btn-group search-buttons" role="group" aria-label="Basic example">
-                        <button type="button" id="accomodation" class="btn btn-secondary search-buttons-item placeType"><i class="fas fa-bed"></i> <br/>Hotels</button>
-                        <button type="button"  id="restaurant" class="btn btn-secondary search-buttons-item placeType"><i class="fas fa-utensils"></i> <br/> Restaurants</button>
-                        <button type="button"  id="attraction" class="btn btn-secondary search-buttons-item placeType"><i class="fas fa-landmark"></i><br/>Attractions</button>
-                        <button type="button"  id="store" class="btn btn-secondary search-buttons-item placeType"><i class="fas fa-shopping-cart"></i><br/>Shopping</button>
-                    </div>
-                    <div class="col">
-                    </div>
+                    <div class="col"></div>
                 </div>
                 <div class="row mt-0">
                     <div class="col">
@@ -92,20 +87,66 @@
                 </div>
             </section>
             <section>
-                <div class="row">
+                <div class="row mt-4">
                     <div class="col-12 text-center">
                         <h3> Travel packages</h3>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-4">
-                        1
+                        <div class="container">
+                            <img src="assets/images/Morocco.jpg" alt="Morocco" style="width:100%; height:100%;">
+                            <div class="text-block">
+                                <h4>Morocco</h4>
+                                <p>more details</p>
+                            </div>
+                        </div>
                     </div>
                     <div class="col-4">
-                        2
+                        <div class="container">
+                            <img src="assets/images/Morroco2.jpg" alt="Morroco mountains" style="width:100%; height:100%;">
+                            <div class="text-block">
+                                <h4>Morocco mountains</h4>
+                                <p>more details</p>
+                            </div>
+                        </div>
                     </div>
                     <div class="col-4">
-                        3
+                        <div class="container">
+                            <img src="assets/images/sicily.jpg" alt="Sicily" style="width:100%;">
+                            <div class="text-block">
+                                <h4>Sicily</h4>
+                                <p>...</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                    <div class="col-4">
+                        <div class="container">
+                            <img src="assets/images/kizhi.jpg" alt="Russia, the North" style="width:100%; height:100%;">
+                            <div class="text-block">
+                               <h4>Russia, the North</h4>
+                                <p>more details</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="container">
+                            <img src="assets/images/Morroco2.jpg" alt="Russia Urals" style="width:100%; height:100%;">
+                            <div class="text-block">
+                                <h4>Russia, Urals</h4>
+                                <p>more details</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="container">
+                            <img src="assets/images/sicily.jpg" alt="Russia. Transsiberian" style="width:100%;">
+                            <div class="text-block">
+                                <h4>Russia. Transsiberian</h4>
+                                <p>...</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </section>
@@ -118,9 +159,28 @@
                 </div>
             </div>
         </footer>
-
-        <!-- Info window, that appears by clicking on the marker -->
-
+        <div style="display: none">
+            <!--Insturcts user to select an establishment type-->
+            <div class="container-fluid layer popup" id="selectType">
+                <div class="row wrapper">
+                    <div class="col-12 text-center my-auto">
+                        <h4>Please select an estblishment type!</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div style="display: none">
+            <!--/Insturcts user to select an establishment type-->
+            <!--Insturcts user to tap the map to search-->
+            <div class="container-fluid over-lay popup" id="tapMap">
+                <div class="row wrapper">
+                    <div class="col-12 text-center my-auto">
+                        <h4><span id="clickOrTap">Tap</span> on the map to search</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--Info window for markers-->
         <div style="display: none">
             <div id="info-content">
                 <table>
@@ -147,17 +207,42 @@
                 </table>
             </div>
         </div>
+        <!--<div style="display: none;">
+            <div class="text-center" id="info-content">
+                <ul id="info-list">
+                    <li id="place-name"></li>
 
-        <!-- jQuery, Popper.js, Bootstrap JS and local JS scripts -->
+                    <li>Address:
+                        <p id="address"></p>
+                    </li>
+
+                    <li>Contact Number:
+                        <p id="phoneNum"></p>
+                    </li>
+
+                    <li id="photos-wrapper"></li>
+
+                    <li id="url"></li>
+                    This will cover the link to the establishment website if no URL is returned
+                    <li class="cover">Not Available</li>
+                </ul>
+            </div>
+        </div>
+        <!--/Info window for markers-->
+    </div>
+
+    <!-- jQuery, Popper.js, Bootstrap JS and local JS scripts -->
 
 
-        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 
-        <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCpJ98gNHZmIBJJqgk_tohr-PflcqO9akY&callback=initMap&libraries=places"></script>
-        <script src="assets/js/maps.js"></script>
-        <script src="assets/js/sendemail.js"></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCpJ98gNHZmIBJJqgk_tohr-PflcqO9akY&callback=initMap&libraries=places"></script>
+    <script src="assets/js/maps.js"></script>
+    <script src="assets/js/sendemail.js"></script>
+    <script src="assets/js/components-map.js"></script>
+
     </div>
 </body>
 
