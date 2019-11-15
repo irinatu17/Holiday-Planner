@@ -6,9 +6,6 @@ var markers = [];
 var ireland = { lat: 53.2, lng: -9.0 };
 var autocomplete;
 var placeType;
-var places;
-var hostnameRegexp = new RegExp('^https?://.+?/');
-
 
 
 //Initialize Map------------------------------------
@@ -19,7 +16,7 @@ function initMap() {
   });
   // Info window with place details
   infoWindow = new google.maps.InfoWindow({
-    content: document.getElementById('place-details')
+    content: document.getElementById('info-content')
   });
 
 
@@ -45,26 +42,25 @@ function initMap() {
   //Nearby establishment search by click---------------------------
   placesService = new google.maps.places.PlacesService(map);
   
- //document.getElementsByClassName('placeType').addEventListener('click', function(event){
-  google.maps.event.addListener(map, 'click', function(event) {
-
-    //This checks to see if a place type has been selected----------------
-    if ($('button').hasClass('active')) {
-      map.panTo(event.latLng);
-      map.setZoom(13);
-      clearMarkers();
-      filterResults(); //Runs filterResults----------—
-    }
-    else {
-      /*If a place type has not been selected then
-      this shows a pop up that instructs user to select a place type*/
-      //$('#selectType').show();
-      document.getElementById('selectType').style.display = '';
-      setTimeout(function() {
-                $('#selectType').hide();
-            }, 2500);
-
-}
+  document.getElementById("accommodation").addEventListener("click", function() {
+    placeType = ['lodging'];
+    clearMarkers();
+    searchPlaces();
+  });
+  document.getElementById("restaurant").addEventListener("click", function() {
+    placeType = ['restaurant', 'bar'];
+    clearMarkers();
+    searchPlaces();
+  });
+  document.getElementById("attraction").addEventListener("click", function() {
+    placeType = ['night_club', 'zoo', 'museum', 'amusement_park', 'park'];
+    clearMarkers();
+    searchPlaces();
+  });
+  document.getElementById("store").addEventListener("click", function() {
+    placeType = ['store', 'shopping_mall'];
+    clearMarkers();
+    searchPlaces();
   });
 
   //Sets the info window in the place details html element------------------------------
@@ -72,30 +68,6 @@ function initMap() {
     content: document.getElementById('info-content')
   });
 }
-//Filter results----------------------------------------------
-
-function filterResults() {
-
-  /*This checks which place type is selected
-  before running the search places function*/
-
-  if ($('#accommodation').hasClass('active')) {
-    placeType = ['lodging'];
-  }
-  else if ($('#restaurant').hasClass('active')) {
-    placeType = ['restaurant', 'bar'];
-  }
-  else if ($('#attraction').hasClass('active')) {
-    placeType = ['night_club', 'zoo', 'museum', 'amusement_park', 'park'];
-  }
-  else if ($('#store').hasClass('active')) {
-    placeType = ['store', 'shopping_mall'];
-  }
-  //Runs searchPlaces function------------------------------------------
-  searchPlaces();
-}
-
-
 //Search places---------------------------------------------------------
 function searchPlaces() {
   var search = {
@@ -113,7 +85,7 @@ function searchPlaces() {
           animation: google.maps.Animation.DROP
         });
         markers[i].placeResult = results[i];
-         google.maps.event.addListener(markers[i], 'click', showInfoWindow); //Show info window when user clicks on a marker---
+        google.maps.event.addListener(markers[i], 'click', showInfoWindow); //Show info window when user clicks on a marker---
         //google.maps.event.addListener(markers[i], 'click', showInfoWindow); Show info window when user clicks on a marker---
         setTimeout(dropMarker(i), i * 100);
       }
@@ -147,25 +119,20 @@ function showInfoWindow() {
         return;
       }
       infoWindow.open(map, marker);
-      buildIWContent(place);
+      renderPlaceDetails(place);
     });
 }
 
 // Load the place information into the HTML elements used by the info window.
-function buildIWContent(place) {
-  document.getElementById('iw-icon').innerHTML = '<img class="hotelIcon" ' +
-    'src="' + place.icon + '"/>';
-  document.getElementById('iw-url').innerHTML = '<b><a href="' + place.url +
-    '">' + place.name + '</a></b>';
-  document.getElementById('iw-address').textContent = place.vicinity;
+function renderPlaceDetails(place) {
+  document.getElementById('place-name').textContent = place.name;
+  document.getElementById('place-address').textContent = place.formatted_address;
 
   if (place.formatted_phone_number) {
-    document.getElementById('iw-phone-row').style.display = '';
-    document.getElementById('iw-phone').textContent =
-      place.formatted_phone_number;
+    document.getElementById('place-phoneNumber').textContent = place.formatted_phone_number;
   }
   else {
-    document.getElementById('iw-phone-row').style.display = 'none';
+    document.getElementById('place-phoneNumber').textContent = 'Not available';
   }
 
   // Assign a five-star rating to the hotel, using a black star ('&#10029;')
@@ -180,27 +147,21 @@ function buildIWContent(place) {
       else {
         ratingHtml += '&#10029;';
       }
-      document.getElementById('iw-rating-row').style.display = '';
-      document.getElementById('iw-rating').innerHTML = ratingHtml;
+      document.getElementById('place-rating-wrapper').style.display = '';
+      document.getElementById('place-rating').innerHTML = ratingHtml;
     }
   }
   else {
-    document.getElementById('iw-rating-row').style.display = 'none';
+    document.getElementById('place-rating-wrapper').style.display = 'none';
   }
 
-  // The regexp isolates the first part of the URL (domain plus subdomain)
-  // to give a short URL for displaying in the info window.
+  //This creates a link to the website-------
+
   if (place.website) {
-    var fullUrl = place.website;
-    var website = hostnameRegexp.exec(place.website);
-    if (website === null) {
-      website = 'http://' + place.website + '/';
-      fullUrl = website;
-    }
-    document.getElementById('iw-website-row').style.display = '';
-    document.getElementById('iw-website').textContent = website;
+    document.getElementById('place-website-wrapper').style.display = '';
+    document.getElementById('place-website').innerHTML = '<a class= "btn btn-red" href="' + place.website + '" target="_blank">' + 'Website ' + '</a>';
   }
   else {
-    document.getElementById('iw-website-row').style.display = 'none';
+    document.getElementById('place-website-wrapper').style.display = 'none';
   }
 }

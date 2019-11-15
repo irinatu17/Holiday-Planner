@@ -131,7 +131,7 @@ body {
     padding-top: 66px;
     padding-bottom: 66px;
     color: #fff;
-    background: url(../images/bg-2.jpg) no-repeat center center scroll;
+    background: url(../images/bg-main.jpg) no-repeat center center scroll;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -232,7 +232,7 @@ div#map {
 #place-name {
     color: #000;
     font-family: 'Nanum+Pen+Script', cursive, sans-serif;
-    font-weight: 600;
+    font-weight: 500;
     font-size: 16px;
     border-bottom: 1px solid #c0e611;
     margin: 5px;
@@ -242,7 +242,6 @@ div#map {
 .weblink {
     position: relative;
     background-color: red;
-    color: #020202;
 }
 
 /* Buttons */
@@ -260,7 +259,7 @@ div#map {
 }
 
 .btn-red {
-    color: white;
+    color: #020202;
     background-color: #c0e611;;
     border-color: #c0e611;;
 }
