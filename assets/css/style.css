@@ -1,24 +1,71 @@
-html,
+@import url('https://fonts.googleapis.com/css?family=Lato|Open+Sans|Nanum+Pen+Script|Oxygen&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
 body {
     font-family: 'Lato', sans-serif;
     margin: 0;
     padding: 0;
     height: 100%;
-    background-color: white;
+    background-color:#fcfafa;
     width: 100vw;
 }
-.uppercase{
-    text-transform: uppercase;
+#body-container {
+    min-height: 100%;
+    position: relative;
+    padding-bottom: 30rem;
 }
+/*header*/
+
+.nav-list {
+    font-size: 110%;
+    list-style-type: none;
+    letter-spacing: 3px;
+    
+}
+
+#logo {
+    padding-left: 10px;
+    float: left;
+    font-size: 150%;
+    text-transform: uppercase;
+     font-family: 'Oxygen', sans-serif;
+    letter-spacing: 2px;
+    color: white;
+}
+
+#logo,
+#menu {
+    line-height: 55px;
+}
+
+.nav-item {
+    float: right;
+    margin-right: 30px;
+}
+
+.nav-link {
+    color:#555555;;
+}
+
+.nav-link:hover {
+    border-bottom: 1px solid #777777;
+}
+
+
 .layer {
     background-color: rgba(248, 247, 216, 0.7);
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
-    height: 100%;}
-    
-    /* Navbar*/
+    height: 100%;
+}
+
+/* Navbar*/
 
 .header-fixed {
     position: absolute;
@@ -35,8 +82,8 @@ body {
     border: none;
 }
 
-#searchBox{
-  width: 400px;
+#searchBox {
+    width: 400px;
 }
 
 .navbar-nav {
@@ -49,12 +96,13 @@ body {
     top: -40px;
     height: 80px;
 }
+.btn-main{
+    background-color: #a9ec24;;
+    color: #020202;
+    font-weight: 400;
 
-#body-container {
-    min-height: 100%;
-    position: relative;
-    padding-bottom: 30rem;
 }
+
 
 .home-background {
     position: absolute;
@@ -83,11 +131,17 @@ body {
     padding-top: 66px;
     padding-bottom: 66px;
     color: #fff;
-    background-color: #d3d3d3;
+    background: url(../images/bg-2.jpg) no-repeat center center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+
+    /*background-color: #d3d3d3;*/
     text-decoration: none;
     height: 100%;
     max-height: 500px;
-    min-height: 340px;
+    min-height: 370px;
     z-index: 0;
 }
 
@@ -109,12 +163,11 @@ body {
 
 
 
-.search-buttons-item {}
 
 div#map {
     min-height: 500px;
     height: 100%;
-     top: -40px;
+    top: -30px;
 }
 
 #footer {
@@ -135,50 +188,88 @@ div#map {
     margin-right: auto;
     margin-left: auto;
 }
-.controls{
+
+.controls {
     width: 350px;
     height: 40px;
     padding: 5px 10px 5px 10px;
 }
-/*----------------Tap Map Instruction Popup---------------*/
-.popup {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: 1;}
-  .popup .wrapper {
-    height: 100%; }
-    .popup .wrapper h4 {
-      font-weight: 300; }
 
-/* Container holding the image and the text */
-.container {
-  position: relative;
-}
+
 
 /* Bottom right text */
+
 .text-block {
-  position: absolute;
-  bottom: 20px;
-  right: 20px;
-  background-color: black;
-  color: white;
-  padding-left: 20px;
-  padding-right: 20px;
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    background-color: black;
+    color: white;
+    padding-left: 20px;
+    padding-right: 20px;
 }
-#rating {
-        font-size: 13px;
-        font-family: Arial Unicode MS;
-      }
-      .iw_table_row {
-        height: 18px;
-      }
-      .iw_attribute_name {
-        font-weight: bold;
-        text-align: right;
-      }
-      .iw_table_icon {
-        text-align: right;
-      }
+
+
+/*----------------Info Window---------------*/
+
+#place-details {
+    margin-left:0;
+    color: #000;
+  
+}
+
+#info-list-places {
+    list-style-type: none;
+}
+.place-line{
+    font-weight: 400;
+    font-size: 14px;
+}
+.place-line-paragraphs{
+    font-weight: 300;
+    font-size: 12px;
+}
+#place-name {
+    color: #000;
+    font-family: 'Nanum+Pen+Script', cursive, sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    border-bottom: 1px solid #c0e611;
+    margin: 5px;
+}
+
+    
+.weblink {
+    position: relative;
+    background-color: red;
+    color: #020202;
+}
+
+/* Buttons */
+
+.btn {
+    font-family: 'Open+Sans', sans-serif;
+    border-radius: 23px;
+    width: 160px;
+}
+
+.btn-small {
+    width: 60px;
+    height: 40px;
+    font-weight: 300;
+}
+
+.btn-red {
+    color: white;
+    background-color: #c0e611;;
+    border-color: #c0e611;;
+}
+
+.btn-red:hover,
+.btn-red:active,
+.btn-red:focus,
+.btn-red:active:focus {
+    background-color: #98b511;
+    border-color: #98b511;
+    color: white;
+}
