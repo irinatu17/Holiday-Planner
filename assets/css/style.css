@@ -5,26 +5,32 @@
     border: 0;
 }
 
+.uppercase {
+    text-transform: uppercase;
+}
+
 body {
     font-family: 'Lato', sans-serif;
     margin: 0;
     padding: 0;
     height: 100%;
-    background-color:#fcfafa;
+    background-color: #fcfafa;
     width: 100vw;
 }
+
 #body-container {
     min-height: 100%;
     position: relative;
     padding-bottom: 30rem;
 }
+
 /*header*/
 
 .nav-list {
     font-size: 110%;
     list-style-type: none;
     letter-spacing: 3px;
-    
+
 }
 
 #logo {
@@ -32,7 +38,7 @@ body {
     float: left;
     font-size: 150%;
     text-transform: uppercase;
-     font-family: 'Oxygen', sans-serif;
+    font-family: 'Oxygen', sans-serif;
     letter-spacing: 2px;
     color: white;
 }
@@ -48,7 +54,8 @@ body {
 }
 
 .nav-link {
-    color:#555555;;
+    color: #555555;
+    ;
 }
 
 .nav-link:hover {
@@ -96,13 +103,19 @@ body {
     top: -40px;
     height: 80px;
 }
-.btn-main{
-    background-color: #a9ec24;;
+
+.btn-main {
+    background-color: #f7c00f;
+    ;
     color: #020202;
     font-weight: 400;
 
 }
 
+.btn-main:hover {
+    background-color: #d0a417;
+    ;
+}
 
 .home-background {
     position: absolute;
@@ -131,18 +144,53 @@ body {
     padding-top: 66px;
     padding-bottom: 66px;
     color: #fff;
-    background: url(../images/bg-main.jpg) no-repeat center center scroll;
+    background: url(../images/bg-main.jpg) no-repeat center center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+    animation-name: hero-zoom;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
 
-    /*background-color: #d3d3d3;*/
     text-decoration: none;
     height: 100%;
     max-height: 500px;
     min-height: 370px;
     z-index: 0;
+}
+
+@keyframes hero-zoom {
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(1.05);
+    }
+}
+
+
+#cover-text {
+    color: #ffffff;
+    font-size: 100%;
+    font-family: "Oxygen";
+    letter-spacing: 3px;
+    width: 280px;
+    height: 150px;
+    padding-top: 20px;
+    padding-left: 10px;
+    background-color: rgba(92, 126, 156, 0.5);
+    top: 250px;
+    right: 70px;
+    position: absolute;
+}
+
+.cover-text-heading {
+    font-size: small;
+}
+
+.cover-text-paragraph {
+    font-size: x-small
 }
 
 .search-wrapper {
@@ -213,22 +261,25 @@ div#map {
 /*----------------Info Window---------------*/
 
 #place-details {
-    margin-left:0;
+    margin-left: 0;
     color: #000;
-  
+
 }
 
 #info-list-places {
     list-style-type: none;
 }
-.place-line{
+
+.place-line {
     font-weight: 400;
     font-size: 14px;
 }
-.place-line-paragraphs{
+
+.place-line-paragraphs {
     font-weight: 300;
     font-size: 12px;
 }
+
 #place-name {
     color: #000;
     font-family: 'Nanum+Pen+Script', cursive, sans-serif;
@@ -238,7 +289,13 @@ div#map {
     margin: 5px;
 }
 
-    
+.block-devider {
+    width: 70px;
+    height: 5px;
+    border-radius: 10%;
+    background-color: #a9ec24;
+}
+
 .weblink {
     position: relative;
     background-color: red;
@@ -260,8 +317,10 @@ div#map {
 
 .btn-red {
     color: #020202;
-    background-color: #c0e611;;
-    border-color: #c0e611;;
+    background-color: #c0e611;
+    ;
+    border-color: #c0e611;
+    ;
 }
 
 .btn-red:hover,
@@ -271,4 +330,51 @@ div#map {
     background-color: #98b511;
     border-color: #98b511;
     color: white;
+}
+
+#about-section {
+    background-color: white;
+    color: #081216;
+}
+
+.about-section-right {
+    text-align: right;
+}
+
+
+.about-paragraphs {
+    padding: 10px;
+    margin: 5px;
+    background-color: #081216;
+    color: white;
+
+}
+
+.about-heading {
+    font-size: 150%;
+    text-shadow: 4px 3px lightgrey;
+    font-weight: 500;
+    text-transform: uppercase;
+    font-family: 'Oxygen', sans-serif;
+    letter-spacing: 2px;
+    font-size: 150%;
+    text-transform: uppercase;
+    font-family: 'Oxygen', sans-serif;
+    letter-spacing: 3px;
+    border-bottom: 3px solid #f7c00f;
+}
+#reasonsBeWithUs{
+    background-color:  #fcfafa;
+}
+.reasonsBeWithUs-item{
+   padding-left:  10px;
+   padding-right: 10px;
+}
+.icon-about{
+    color: #f7c00f;
+    font-size: 25px;
+    margin: 12px;
+}
+#travel-packages-section{
+      color: #081216;
 }

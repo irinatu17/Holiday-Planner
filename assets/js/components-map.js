@@ -1,4 +1,4 @@
-$(document).ready(function() {
+/*$(document).ready(function() {
     //Toggles the selected class for each place type------------------------------------------
 
     $('#accommodation').click(function() {
@@ -27,3 +27,4 @@ $(document).ready(function() {
     });
 
 });
+*/
