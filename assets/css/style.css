@@ -116,6 +116,9 @@ body {
     background-color: #d0a417;
     ;
 }
+.heading-main{
+text-shadow: 3px 2px black;    
+}
 
 .home-background {
     position: absolute;
@@ -213,7 +216,7 @@ body {
 
 
 div#map {
-    min-height: 500px;
+    min-height: 550px;
     height: 100%;
     top: -30px;
 }
@@ -347,6 +350,7 @@ div#map {
     margin: 5px;
     background-color: #081216;
     color: white;
+    line-height: 1.8;
 
 }
 
@@ -377,4 +381,32 @@ div#map {
 }
 #travel-packages-section{
       color: #081216;
+      height: 600px;
+      background-color: rgba(92, 126, 156, 0.5);
+}
+.btn-packages{
+    font-family: "Oxygen", sans-serif;
+    text-align: center;
+    font-weight: bold; background-color:#fcfafa; 
+}
+.btn-packages:hover{
+    text-decoration: underline;
+}
+.img-container{
+    position: relative;
+}
+.bottom-right {
+  position: absolute;
+  bottom: 2px;
+  right: 16px;
+}
+.content-img{
+  position: absolute; /* Position the background text */
+  bottom: 0; /* At the bottom. Use top:0 to append it to the top */
+  background: rgb(0, 0, 0); /* Fallback color */
+  background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
+  color: #f1f1f1; /* Grey text */
+  width: 100%; /* Full width */
+  padding: 10px; /* Some padding */
+    
 }
