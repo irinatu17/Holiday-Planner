@@ -1,14 +1,8 @@
 @import url('https://fonts.googleapis.com/css?family=Lato|Open+Sans|Nanum+Pen+Script|Oxygen&display=swap');
-* {
-    margin: 0;
-    padding: 0;
-    border: 0;
-}
 
 .uppercase {
     text-transform: uppercase;
 }
-
 body {
     font-family: 'Lato', sans-serif;
     margin: 0;
@@ -36,6 +30,7 @@ body {
     font-family: 'Oxygen', sans-serif;
     letter-spacing: 2px;
     color: white;
+    text-shadow: 3px 2px black; 
 }
 
 #logo,
@@ -46,26 +41,21 @@ body {
 .nav-item {
     float: right;
     margin-right: 30px;
+   
+   
+    
 }
-
-.nav-link {
-    color: #555555;
-    ;
+.nav-link{
+     color: black;
+     font-size: 18px;
+     text-shadow: 2px 1px white;
+     font-weight: 500;
 }
 
 .nav-link:hover {
     border-bottom: 1px solid #777777;
 }
 
-
-.layer {
-    background-color: rgba(248, 247, 216, 0.7);
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-}
 
 /* Navbar*/
 
@@ -138,18 +128,14 @@ text-shadow: 3px 2px black;
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 1.15rem;
     padding-top: 66px;
     padding-bottom: 66px;
     color: #fff;
-    background: url(../images/bg-main.jpg) no-repeat center center;
+   background: url(../images/bg-main.jpg) no-repeat center center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    animation-name: hero-zoom;
-    animation-duration: 2s;
-    animation-fill-mode: forwards;
 
     text-decoration: none;
     height: 100%;
@@ -158,52 +144,8 @@ text-shadow: 3px 2px black;
     z-index: 0;
 }
 
-@keyframes hero-zoom {
-    from {
-        transform: scale(1);
-    }
-    to {
-        transform: scale(1.05);
-    }
-}
 
 
-#cover-text {
-    color: #ffffff;
-    font-size: 100%;
-    font-family: "Oxygen";
-    letter-spacing: 3px;
-    width: 280px;
-    height: 150px;
-    padding-top: 20px;
-    padding-left: 10px;
-    background-color: rgba(92, 126, 156, 0.5);
-    top: 240px;
-    right: 70px;
-    position: absolute;
-}
-#cover2 {
-    color: #ffffff;
-    font-size: 100%;
-    font-family: "Oxygen";
-    letter-spacing: 3px;
-    width: 280px;
-    height: 150px;
-    padding-top: 20px;
-    padding-left: 10px;
-    background-color: rgba(92, 126, 156, 0.5);
-    top: 240px;
-    right: 70px;
-    position: absolute;
-}
-
-.cover-text-heading {
-    font-size: small;
-}
-
-.cover-text-paragraph {
-    font-size: x-small
-}
 
 .search-wrapper {
     display: flex;
@@ -213,8 +155,7 @@ text-shadow: 3px 2px black;
 }
 
 .search-title {
-    display: block;
-    font-size: 36px;
+    font-size: 26px;
     line-height: 48px;
     font-weight: 700;
     margin-top: 0;
@@ -222,7 +163,9 @@ text-shadow: 3px 2px black;
 }
 
 
-
+.form-group{
+    text-align: left;
+}
 
 div#map {
     min-height: 550px;
@@ -513,4 +456,9 @@ footer .cv-pdf i:hover {
     margin-bottom: 20px;
     background-color: darkgreen;
     color: #fafafa;
+}
+@media (min-width: 768px){
+.search-title{
+    font-size: 36px;
+}
 }
