@@ -30,19 +30,19 @@
 <body>
     <header class="container-fluid d-flex">
         <!-------------------Navbar----------------------->
-        <nav class="header-fixed transperant ">
+        <nav class="header-fixed transperant">
             <a href="index.html">
                 <h2 id="logo">TravelWithLove <i class="fas fa-globe-europe"></i></h2>
             </a>
-            <ul class="nav nav-list justify-content-end">
+            <ul class="nav nav-list justify-content-end d-none d-md-block">
                 <li class="nav-item">
-                    <a class="nav-link" href="#about-section">About</a>
+                    <a class="nav-link" href="#contact-form">Contact us</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#travel-packages-section">Travel packages</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Contact us</a>
+                    <a class="nav-link" href="#about-section">About</a>
                 </li>
             </ul>
         </nav>
@@ -69,21 +69,21 @@
     <!------------Map section---------------->
     <section class="container-fluid">
         <div class="row text-center">
-            <div class="col-sm-4"></div>
+            <div class="col"></div>
             <!------------Establishment buttons--------------------->
-            <div class="col-sm-4 btn-group search-buttons">
+            <div class="col-sm-12 col-md-6 col-lg-4  btn-group search-buttons">
                 <button type="button" id="accommodation" class="btn btn-main"><i class="fas fa-bed"></i> <br/>Hotels</button>
                 <button type="button" id="restaurant" class="btn btn-main"><i class="fas fa-utensils"></i> <br/> Restaurants</button>
                 <button type="button" id="attraction" class="btn btn-main"><i class="fas fa-landmark"></i><br/>Attractions</button>
                 <button type="button" id="store" class="btn btn-main"><i class="fas fa-shopping-cart"></i><br/>Shopping</button>
             </div>
-            <div class="col-sm-4"></div>
+            <div class="col"></div>
         </div>
         <!-------------------Map----------------------->
         <div class="row">
             <div class="col">
             </div>
-            <div class="col-md-10">
+            <div class="col-lg-11">
                 <div id="map"></div>
             </div>
             <div class="col">
@@ -98,30 +98,34 @@
                 </h2>
             </div>
         </div>
-        <div class="row mr-4 mb-4 mt-4 ml-4">
+        <div class="row mb-4 about-heading-mobile-center">
             <div class="col"></div>
-            <div class="col-sm-4 about-section-right">
-                <h4 class="about-heading">Plan it yourself <i class="fas fa-arrow-right"></i></h4>
+            <div class="col-lg-4 col-md-5 about-section-right">
+                <h4 class="about-heading">Plan it yourself <i class="fas fa-arrow-right arrows-icon"></i><i class="fas fa-arrow-down icon-mobile"></i></h4>
             </div>
-            <div class="col-sm-4">
+            <div class="col-lg-4 col-md-6">
                 <p class="about-paragraphs shadow-lg p-3 mb-5 rounded">If you prefer planning your own journey by yourself, go to the map section above, where you can find accommodation, places to eat, tourist attractions and stores. Simply search a location and click the buttons of different establishment
                     to get detailed information and useful links.</p>
+                <i class="fas fa-plane-departure text-center icon-mobile"></i>
             </div>
             <div class="col"></div>
+
         </div>
-        <div class="row mr-4 mb-4 mt-4 ml-4">
+
+        <div class="row mb-4 about-heading-mobile-center">
             <div class="col"></div>
-            <div class="col-sm-4 about-section-right">
+            <div class="col-lg-4 col-md-6 about-section-right">
                 <p class="about-paragraphs shadow-lg p-3 mb-5 rounded text-left">
                     Love more comfort and don't want to spend time for planning? <br/>We have done it for you! Have a look at our regularly updated travel packages, book it now and get unforgetable experience!
                 </p>
             </div>
-            <div class="col-sm-4">
-                <h4 class="about-heading"><i class="fas fa-arrow-left"></i> Travel with us</h4>
+            <div class="col-lg-4 col-md-5">
+                <h4 class="about-heading"><i class="fas fa-arrow-left arrows-icon"></i><i class="fas fa-arrow-up icon-mobile"></i> Travel with us</h4>
             </div>
             <div class="col"></div>
         </div>
 
+        <!------------Reasons to be with us---------------->
         <div id="reasonsBeWithUs">
             <hr>
             <div class="row">
@@ -131,9 +135,10 @@
                     </h3>
                 </div>
             </div>
+
             <div class="row text-center mt-4 mb-4">
-                <div class="col"></div>
-                <div class="col-sm-3 reasonsBeWithUs-item shadow-lg p-3 mr-4 mb-5 rounded">
+                <div class="col d-sm-none d-md-block"></div>
+                <div class="col-sm-12 col-md-5 col-lg-3 reasonsBeWithUs-item shadow-lg p-3 mr-lg-4 mb-lg-5 rounded">
                     <div class="card">
                         <div class="card-body">
                             <h5 class="uppercase">Adventure</h5>
@@ -142,7 +147,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-sm-3 reasonsBeWithUs-item shadow-lg p-3  mr-4 mb-5 rounded">
+                <div class="col-sm-12 col-md-5 col-lg-3 reasonsBeWithUs-item shadow-lg p-3 mr-lg-4 mb-lg-5 rounded">
                     <div class="card">
                         <div class="card-body">
                             <h5 class="uppercase">Comfort</h5>
@@ -151,7 +156,10 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-sm-3 reasonsBeWithUs-item shadow-lg p-3 mb-5 mr-4 rounded">
+                <div class="col d-sm-none d-md-block d-lg-none"></div>
+                <div class="w-100 d-sm-none d-md-block d-lg-none"></div>
+                <div class="col d-sm-none d-md-block d-lg-none"></div>
+                <div class="col-sm-12 col-md-5 col-lg-3 reasonsBeWithUs-item shadow-lg p-3 mr-lg-4 mb-lg-5 rounded">
                     <div class="card">
                         <div class="card-body">
                             <h5 class="uppercase">Guides</h5>
@@ -160,11 +168,10 @@
                         </div>
                     </div>
                 </div>
-                <div class="col"></div>
-            </div>
-            <div class="row text-center mt-4 mb-4">
-                <div class="col"></div>
-                <div class="col-sm-3 reasonsBeWithUs-item shadow-lg p-3  mr-4 mb-5 rounded">
+                <div class="col d-sm-none d-lg-block d-md-none"></div>
+                <div class="w-100 d-sm-none d-md-none d-lg-block"></div>
+                <div class="col d-sm-none d-lg-block d-md-none"></div>
+                <div class="col-sm-12 col-md-5 col-lg-3 reasonsBeWithUs-item shadow-lg p-3 mr-lg-4 mb-lg-5  rounded">
                     <div class="card">
                         <div class="card-body">
                             <h5 class="uppercase">Transfer</h5>
@@ -173,7 +180,10 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-sm-3 reasonsBeWithUs-item shadow-lg p-3  mr-4 mb-5 rounded">
+                <div class="col d-sm-none d-md-block d-lg-none"></div>
+                <div class="w-100 d-sm-none d-md-block d-lg-none"></div>
+                <div class="col d-sm-none d-md-block d-lg-none"></div>
+                <div class="col-sm-12 col-md-5 col-lg-3 reasonsBeWithUs-item shadow-lg p-3  mr-lg-4 mb-lg-5 rounded">
                     <div class="card">
                         <div class="card-body">
                             <h5 class="uppercase">Price</h5>
@@ -182,7 +192,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-sm-3 reasonsBeWithUs-item shadow-lg p-3 mb-5 mr-4 rounded">
+                <div class="col-sm-12 col-md-5 col-lg-3 reasonsBeWithUs-item shadow-lg p-3 mr-lg-4 mb-lg-5 rounded">
                     <div class="card">
                         <div class="card-body">
                             <h5 class="uppercase">Custom-designed travel</h5>
@@ -197,7 +207,7 @@
     </section>
     <!------------Travel packages section---------------->
     <section id="travel-packages-section" class="mt-4 container-fluid">
-        <hr>
+
         <div class="row mt-4 mb-4">
             <div class="col-12 text-center mb-4 mt-4 ">
                 <h2> Travel packages</h2>
@@ -248,7 +258,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col"></div>
+            <div class="col d-sm-none d-md-block"></div>
         </div>
         <div class="row">
             <div class="col"></div>
@@ -300,48 +310,44 @@
     </section>
     <!-- Footer -->
     <footer class=" text-center container-fluid">
-        <div id="footer-details" class="row ">
-            <div class="col-sm-4 mt-4">
+        <div id="footer-details" class="row">
+            <div class="col col-lg-4 mt-4">
                 <h5 class="uppercase general-sub ">TravelWithLove <i class="fas fa-globe-europe"></i></h5>
                 <p class="inline-block ">
                     <h6>TravelWithLove will make your dreams true.</h6>
                     <p> Start planning your next holiday with us now!</p>
                 </p>
             </div>
-            <div class="col-sm-4 mt-4" id="contact-form">
-                <div class="row bg-color-contact">
-                    <div>
-                        <h5 class="contact-heading uppercase text-center">Ready to book a tour? Have any questions?</h5>
-                        <p class="text-center">Submit your enquiry here and we will get back to you.</p>
-                    </div>
-                    <div class="center-form">
-                        <form class="bookingform" onsubmit="return sendMail(this);" method="POST;">
-                            <div class="form-group">
-                                <label for="name">Name:</label>
-                                <input type="text" class="form-control" id="name" name="name" required placeholder="Enter your name">
-                            </div>
-                            <div class="form-group">
-                                <label for="email">E-mail:</label>
-                                <input type="email" class="form-control" id="email" name="emailaddress" required aria-describedby="emailHelp" placeholder="Enter your email">
-                            </div>
-                            <div class="form-group">
-                                <label for="name">Your enquiry:</label>
-                                <textarea class="form-control" id="bookingtravelquery" name="bookingtravelquery" required placeholder="Enter your enquiry" rows="5"> </textarea>
-                            </div>
-                            <div class="form-group text-center">
-                                <button type="submit" class="btn btn-red text-center">Submit</button>
-                            </div>
-                        </form>
-                    </div>
-
+            <div class="col-auto col-lg-4 mt-4" id="contact-form">
+                <h5 class="contact-heading uppercase text-center">Ready to book a tour? <br/>Have any questions?</h5>
+                <p class="text-center">Submit your enquiry here and we will get back to you.</p>
+                <div class="center-form">
+                    <form class="bookingform" onsubmit="return sendMail(this);" method="POST;">
+                        <div class="form-group">
+                            <label for="name">Name:</label>
+                            <input type="text" class="form-control" id="name" name="name" required placeholder="Enter your name">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">E-mail:</label>
+                            <input type="email" class="form-control" id="email" name="emailaddress" required aria-describedby="emailHelp" placeholder="Enter your email">
+                        </div>
+                        <div class="form-group">
+                            <label for="name">Your enquiry:</label>
+                            <textarea class="form-control" id="bookingtravelquery" name="bookingtravelquery" required placeholder="Enter your enquiry" rows="5"> </textarea>
+                        </div>
+                        <div class="form-group text-center">
+                            <button type="submit" class="btn btn-red text-center">Submit</button>
+                        </div>
+                    </form>
                 </div>
             </div>
-            <div class="col-sm-4 mt-4 text-center">
-                <h5 class="uppercase general-sub ">Follow us:</h5>
+            <div class="col col-lg-4 mt-4">
+                <h5 class="uppercase general-sub mb-4">Follow us:</h5>
                 <ul class="list-inline social-links ">
-                    <li class="list-inline-item"><a target="_blank" href="# "><i class="fab fa-facebook-f"></i></a></li>
-                    <li class="list-inline-item"><a target="_blank" href="# "><i class="fab fa-instagram"></i></a></li>
-                    <li class="list-inline-item"><a target="_blank" href="# "><i class="fab fa-youtube"></i></a></li>
+                    <li class="list-inline-item"><a target="_blank" href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a></li>
+                    <li class="list-inline-item"><a target="_blank" href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a></li>
+                    <li class="list-inline-item"><a target="_blank" href="https://twitter.com/"><i class="fab fa-twitter"></i></a></li>
+
                 </ul>
             </div>
         </div>

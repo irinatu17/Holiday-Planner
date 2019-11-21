@@ -25,7 +25,7 @@ body {
 #logo {
     padding-left: 10px;
     float: left;
-    font-size: 150%;
+    font-size: 100%;
     text-transform: uppercase;
     font-family: 'Oxygen', sans-serif;
     letter-spacing: 2px;
@@ -155,8 +155,8 @@ text-shadow: 3px 2px black;
 }
 
 .search-title {
-    font-size: 26px;
-    line-height: 48px;
+    font-size: 28px;
+    line-height: 34px;
     font-weight: 700;
     margin-top: 0;
     margin-bottom: 15px;
@@ -264,6 +264,7 @@ text-align: center;
     font-family: 'Open+Sans', sans-serif;
     border-radius: 23px;
     width: 160px;
+    padding: 0;
 }
 
 .btn-small {
@@ -289,14 +290,21 @@ text-align: center;
 }
 
 #about-section {
-    background-color: white;
+    background-color: #f9f7f5;
     color: #081216;
 }
 
 .about-section-right {
-    text-align: right;
+    text-align: center;
 }
 
+.arrows-icon{
+    display: none;
+}
+.icon-mobile{
+    display: inline;
+    font-size: 25px;
+}
 
 .about-paragraphs {
     padding: 10px;
@@ -307,6 +315,7 @@ text-align: center;
 
 }
 
+
 .about-heading {
     font-size: 150%;
     text-shadow: 4px 3px lightgrey;
@@ -314,18 +323,20 @@ text-align: center;
     text-transform: uppercase;
     font-family: 'Oxygen', sans-serif;
     letter-spacing: 2px;
-    font-size: 150%;
-    text-transform: uppercase;
-    font-family: 'Oxygen', sans-serif;
-    letter-spacing: 3px;
     border-bottom: 3px solid #f7c00f;
 }
+.about-heading-mobile-center{
+    text-align: center;
+}
 #reasonsBeWithUs{
-    background-color:  #fcfafa;
+    background-color:  #aaffde1c;
 }
 .reasonsBeWithUs-item{
    padding-left:  10px;
    padding-right: 10px;
+}
+.reasonsBeWithUs-item:hover{
+    box-shadow: 10px 10px 40px 10px pink;
 }
 .icon-about{
     color: #f7c00f;
@@ -334,7 +345,7 @@ text-align: center;
 }
 #travel-packages-section{
     color: black;
-    background-color: rgba(92, 126, 156, 0.5);
+    background-color: #fff8f866;
     padding-bottom: 20px;
 }
 .btn-packages{
@@ -431,9 +442,6 @@ footer .cv-pdf i:hover {
     background: #d6249f;
   background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
 }
-.fa-youtube:hover {
-    background: #bb0000;
-}
 .copyright{
  font-family:'PT+Sans', sans-serif;
  font-weight:400;
@@ -457,8 +465,34 @@ footer .cv-pdf i:hover {
     background-color: darkgreen;
     color: #fafafa;
 }
+
+/* for laptop and tablet */
 @media (min-width: 768px){
 .search-title{
     font-size: 36px;
+    line-height: 48px;
 }
+#logo{
+  font-size: 150%;  
+}
+.arrows-icon{
+    display: inline;
+}
+.icon-mobile{
+    display: none;
+}
+.about-section-right {
+    text-align: right;
+}
+}
+/*for tablet */
+@media (min-width: 768px) and (max-width: 991px)  {
+    .nav-item {
+    margin-right: 10px;
+}
+    .nav-list {
+    font-size: 100%;
+    letter-spacing: 1px;
+}
+
 }
