@@ -7,6 +7,7 @@ function sendMail(contactForm) {
         .then(
             function(response) {
                 console.log("SUCCESS", response);
+                $("#myModal").modal("show");
             },
 
             function(error) {
