@@ -8,7 +8,6 @@ $(document).ready(function() {
             $(this).next().hide();
         });
 
-
         $(".img-packages").mouseover(function() {
             $(this).next().show();
         });

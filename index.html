@@ -6,13 +6,12 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- Boostrap, CSS,  -->
+    <!-- Boostrap, CSS, Scripts -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.1.1/css/hover-min.css" type="text/css" />
 
     <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
-
     <script src="https://kit.fontawesome.com/baccdfdbc9.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css?family=Amatic+SC:400,700|Nanum+Pen+Script:400,700|Lato:100,100i,400,700,900|Open+Sans:300,300i,400,600,700,800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/style.css" type="text/css" />
@@ -24,19 +23,17 @@
             emailjs.init("user_6JZwmOVF6W8pYW5Sgu9e3");
         })();
     </script>
-
-
     <title>Holiday Planner</title>
 </head>
 
 <body>
-    <header class="container-fluid d-flex">
+    <header class="container-fluid">
         <!-------------------Navbar----------------------->
         <nav class="header-fixed transperant">
             <a href="index.html">
                 <h2 id="logo">TravelWithLove <i class="fas fa-globe-europe"></i></h2>
             </a>
-            <ul class="nav nav-list justify-content-end d-none d-md-block">
+            <ul class="nav justify-content-end d-none d-md-block">
                 <li class="nav-item">
                     <a class="nav-link" href="#contact-form">Contact us</a>
                 </li>
@@ -51,28 +48,29 @@
     </header>
     <!-------------------Search home main section----------------------->
     <section class="home-container container-fluid">
-        <div class="search-container search-content text-center">
+        <div class="search-content-wrapper text-center">
             <div class="row">
                 <div class="col"></div>
                 <div class="col-sm-10 mt-4">
-                    <h1 class="heading-main search-title">Find your best holiday destination</h1>
+                    <h1 class="heading-main">Find your best holiday destination</h1>
                 </div>
                 <div class="col"></div>
             </div>
             <div class="row text-center">
                 <div class="col d-sm-none d-md-block"></div>
                 <div id="locationField" class="col-sm-12 col-md-10 mt-4">
-                    <input id="searchPlace" class="controls" type="text" placeholder="Where are you going?" />
+                    <input id="searchPlace" type="text" placeholder="Where are you going?">
                 </div>
                 <div class="col d-sm-none d-md-block"></div>
             </div>
         </div>
     </section>
+
     <!------------Map section---------------->
     <section class="container-fluid">
         <div class="row text-center">
             <div class="col"></div>
-            <!------------Establishment buttons--------------------->
+            <!------------Establishment buttons------------------>
             <div class="col-sm-12 col-md-6 col-lg-4  btn-group search-buttons">
                 <button type="button" id="accommodation" class="btn btn-main"><i class="fas fa-bed"></i> <br/>Hotels</button>
                 <button type="button" id="restaurant" class="btn btn-main"><i class="fas fa-utensils"></i> <br/> Restaurants</button>
@@ -93,16 +91,17 @@
         </div>
     </section>
     <!------------About section---------------->
-    <section class="container-fluid" id="about-section">
+    <section class="container-fluid" id="about-section-wrapper">
         <div class="row text-center">
             <div class="col-12 mt-4 mb-4 text-center">
                 <h2>About <i class="fas fa-globe-europe"></i></i>
                 </h2>
             </div>
         </div>
+        <!------------Instructions for using, about the website---------------->
         <div class="row mb-4 about-heading-mobile-center">
             <div class="col"></div>
-            <div class="col-lg-4 col-md-5 about-section-right">
+            <div class="col-lg-4 col-md-5 about-section-right-on-lg">
                 <h4 class="about-heading">Plan it yourself <i class="fas fa-arrow-right arrows-icon"></i><i class="fas fa-arrow-down icon-mobile"></i></h4>
             </div>
             <div class="col-lg-4 col-md-6">
@@ -111,12 +110,10 @@
                 <i class="fas fa-plane-departure text-center icon-mobile"></i>
             </div>
             <div class="col"></div>
-
         </div>
-
         <div class="row mb-4 about-heading-mobile-center">
             <div class="col"></div>
-            <div class="col-lg-4 col-md-6 about-section-right">
+            <div class="col-lg-4 col-md-6 about-section-right-on-lg">
                 <p class="about-paragraphs shadow-lg p-3 mb-5 rounded text-center">
                     Love more comfort and don't want to spend time for planning? <br/>We have done it for you! Have a look at our regularly updated travel packages, book it now and get unforgetable experience!
                 </p>
@@ -126,7 +123,6 @@
             </div>
             <div class="col"></div>
         </div>
-
         <!------------Reasons to be with us---------------->
         <div id="reasonsBeWithUs">
             <hr>
@@ -209,7 +205,6 @@
     </section>
     <!------------Travel packages section---------------->
     <section id="travel-packages-section" class="mt-4 container-fluid">
-
         <div class="row mt-4 mb-4">
             <div class="col-12 text-center mb-4 mt-4 ">
                 <h2> Travel packages</h2>
@@ -219,6 +214,7 @@
             <div class="col"></div>
             <div class="col-md-11">
                 <div class="card-deck">
+                    <!------------Morocco card---------------->
                     <div class="card">
                         <div class="img-container">
                             <div class="img-packages" id="Morocco" type="button">
@@ -232,7 +228,7 @@
                                 <h4>Morocco</h4>
                                 <p class="bottom-right">€699 pps</p>
                             </div>
-                            <!-----Modal carousel---->
+                            <!-----Modal Morocco carousel---->
                             <div class="modal fade  text-center" id="MoroccoModal">
                                 <div class="modal-dialog modal-dialog-centered modal-lg">
                                     <div class="modal-content">
@@ -268,6 +264,7 @@
                             </p>
                         </div>
                     </div>
+                    <!------------Morocco mountains card---------------->
                     <div class="card">
                         <div class="img-container">
                             <div class="img-packages" id="MoroccoMountain" type="button">
@@ -281,7 +278,7 @@
                                 <h4>Morocco mountains</h4>
                                 <p class="bottom-right">€550 pps</p>
                             </div>
-                            <!-----Modal carousel---->
+                            <!-----Modal Morocco mountains carousel---->
                             <div class="modal fade  text-center" id="MoroccoMountainsModal">
                                 <div class="modal-dialog modal-dialog-centered modal-lg">
                                     <div class="modal-content">
@@ -316,6 +313,7 @@
                                 After your climb, catch breath in the hot and bright Marrakesh.</p>
                         </div>
                     </div>
+                    <!------------Sicily card---------------->
                     <div class="card">
                         <div class="img-container">
                             <div class="img-packages" id="Sicily" type="button">
@@ -329,7 +327,7 @@
                                 <h4>Sicily</h4>
                                 <p class="bottom-right">€500 pps</p>
                             </div>
-                            <!-----Modal carousel---->
+                            <!-----Modal Sicily carousel---->
                             <div class="modal fade  text-center" id="SicilyModal">
                                 <div class="modal-dialog modal-dialog-centered modal-lg">
                                     <div class="modal-content">
@@ -372,6 +370,7 @@
             <div class="col"></div>
             <div class="col-md-11">
                 <div class="card-deck">
+                    <!------------Russia, North card---------------->
                     <div class="card">
                         <div class="img-container">
                             <div class="img-packages" id="russianNorth" type="button">
@@ -385,7 +384,7 @@
                                 <h4>Russia, the North</h4>
                                 <p class="bottom-right">€800 pps</p>
                             </div>
-                            <!-----Modal carousel---->
+                            <!-----Modal Russia, North carousel---->
                             <div class="modal fade  text-center" id="RussiaNorthModal">
                                 <div class="modal-dialog modal-dialog-centered modal-lg">
                                     <div class="modal-content">
@@ -424,6 +423,7 @@
                                 port of Arkhangelsk. Take a helicopter to tundra seeing worlds largest herds of reindeer.</p>
                         </div>
                     </div>
+                    <!------------Russia, Transsiberian card---------------->
                     <div class="card">
                         <div class="img-container">
                             <div class="img-packages" id="russiaTranssiberian" type="button">
@@ -437,7 +437,7 @@
                                 <h4>Russia. Transsiberian</h4>
                                 <p class="bottom-right">€769 pps</p>
                             </div>
-                            <!-----Modal carousel---->
+                            <!-----Modal Russia, Transsiberian carousel---->
                             <div class="modal fade  text-center" id="russiaTranssiberianNorthModal">
                                 <div class="modal-dialog modal-dialog-centered modal-lg">
                                     <div class="modal-content">
@@ -472,6 +472,7 @@
                                 Route can be adjusted to your need as well as number of days.</p>
                         </div>
                     </div>
+                    <!------------Russia, Urals card---------------->
                     <div class="card">
                         <div class="img-container">
                             <div class="img-packages" id="russiaUrals" type="button">
@@ -485,7 +486,7 @@
                                 <h4>Russia, Urals</h4>
                                 <p class="bottom-right">€850 pps</p>
                             </div>
-                            <!-----Modal carousel---->
+                            <!-----Modal Russia, Urals carousel---->
                             <div class="modal fade  text-center" id="russiaUralsModal">
                                 <div class="modal-dialog modal-dialog-centered modal-lg">
                                     <div class="modal-content">
@@ -528,6 +529,7 @@
             <div class="col"></div>
             <div class="col-md-11">
                 <div class="card-deck">
+                    <!------------Ireland, Drinks card---------------->
                     <div class="card">
                         <div class=" img-container">
                             <div class="img-packages" id="IrelandDrinks" type="button">
@@ -541,7 +543,7 @@
                                 <h4>Ireland. Drinks</h4>
                                 <p class="bottom-right">€500 pps</p>
                             </div>
-                            <!-----Modal carousel---->
+                            <!-----Modal Ireland, Drinks carousel---->
                             <div class="modal fade  text-center" id="IrelandDrinksModal">
                                 <div class="modal-dialog modal-dialog-centered modal-lg">
                                     <div class="modal-content">
@@ -576,6 +578,7 @@
                                 While Irish alcohol manufactures are highlights of this tour, you’ll be surrounded by surreal green fields, castles, sheep and cliffs at all times.</p>
                         </div>
                     </div>
+                    <!------------Ireland, Ocean card---------------->
                     <div class="card">
                         <div class="img-container">
                             <div class="img-packages" id="IrelandOcean" type="button">
@@ -589,7 +592,7 @@
                                 <h4>Ireland. The Ocean</h4>
                                 <p class="bottom-right">€700 pps</p>
                             </div>
-                            <!-----Modal carousel---->
+                            <!-----Modal Ireland, Ocean carousel---->
                             <div class="modal fade  text-center" id="IrelandOceanModal">
                                 <div class="modal-dialog modal-dialog-centered modal-lg">
                                     <div class="modal-content">
@@ -624,6 +627,7 @@
                                 road – beaches, cliffs, surfing, kayaking opportunities. Discover pub culture as never before - traditional music,story telling and welcome of Irish people.</p>
                         </div>
                     </div>
+                    <!------------Greece, Crete card---------------->
                     <div class="card">
                         <div class="img-container">
                             <div class="img-packages" id="Greece" type="button">
@@ -637,7 +641,7 @@
                                 <h4>Greece, Crete Island</h4>
                                 <p class="bottom-right">400 pps</p>
                             </div>
-                            <!-----Modal carousel---->
+                            <!-----Modal Greece, Crete carousel---->
                             <div class="modal fade  text-center" id="GreeceModal">
                                 <div class="modal-dialog modal-dialog-centered modal-lg">
                                     <div class="modal-content">
@@ -677,12 +681,12 @@
             <div class="col"></div>
         </div>
     </section>
-    <!-- Footer -->
+    <!------------ Footer -------------------------------->
     <footer class=" text-center container-fluid">
         <div id="footer-details" class="row">
             <div class="col col-lg-4 mt-4">
-                <h5 class="uppercase general-sub ">TravelWithLove <i class="fas fa-globe-europe"></i></h5>
-                <p class="inline-block ">
+                <h5 class="uppercase footer-blocks">TravelWithLove <i class="fas fa-globe-europe"></i></h5>
+                <p class="inline-block">
                     <h6>TravelWithLove will make your dreams true.</h6>
                     <p> Start planning your next holiday with us now!</p>
                 </p>
@@ -711,7 +715,7 @@
                 </div>
             </div>
             <div class="col col-lg-4 mt-4">
-                <h5 class="uppercase general-sub mb-4">Follow us:</h5>
+                <h5 class="uppercase footer-blocks mb-4">Follow us:</h5>
                 <ul class="list-inline social-links ">
                     <li class="list-inline-item"><a target="_blank" href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a></li>
                     <li class="list-inline-item"><a target="_blank" href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a></li>
@@ -726,36 +730,33 @@
         </div>
     </footer>
 
-    <!--Info window for markers-->
-    <div id="info-content">
-        <div class="col-12 text-center" id="place-name"></div>
-
-        <div id="info-list-places" class="mt-4 mb-3">
+    <!------------Info window for markers--------------->
+    <div style="display: none;">
+        <div id="info-content">
+            <div class="col-12 text-center" id="place-name"></div>
+            <div id="info-list-places" class="mt-4 mb-3">
                 <h5 class="place-line">Address:</h5>
                 <p id="place-address" class="place-line-paragraphs"></p>
-            <table>
-             <tr>
-                <td class="place-line">Contact Number:</td>
-                <td id="place-phoneNumber" class="place-line-paragraphs"></td>
-            </tr>
-            <tr>
-                <td class="place-line" id="place-rating-wrapper">Rating:</td>
-                <td id="place-rating" class="place-line-paragraphs"></td>
-            </tr>
-            
-        </table>
-       </div>
-        <div id="place-website-wrapper" class="text-center">
-            <p id="place-website"></p>
+                <table>
+                    <tr>
+                        <td class="place-line">Contact Number:</td>
+                        <td id="place-phoneNumber" class="place-line-paragraphs"></td>
+                    </tr>
+                    <tr>
+                        <td class="place-line" id="place-rating-wrapper">Rating:</td>
+                        <td id="place-rating" class="place-line-paragraphs"></td>
+                    </tr>
+                </table>
+            </div>
+            <div id="place-website-wrapper" class="text-center">
+                <p id="place-website"></p>
+            </div>
         </div>
-
     </div>
-    <!-- Modal -->
-
+    <!----- Modal Submission Contact us------>
     <div class="modal fade" id="myModal">
         <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
-
                 <div class="modal-header">
                     <h5 class="modal-title text-center">Thank you for your submission! <i class="fas fa-envelope-open-text"></i></h5>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
@@ -768,15 +769,15 @@
             </div>
         </div>
     </div>
+
     <!-- jQuery, Popper.js, Bootstrap JS and local JS scripts -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js " integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1 " crossorigin="anonymous "></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js " integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM " crossorigin="anonymous "></script>
 
-    <script src="assets/js/components-map.js "></script>
     <script src="assets/js/maps.js "></script>
+    <script src="assets/js/components-map.js "></script>
     <script src="assets/js/sendEmail.js"></script>
     <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCpJ98gNHZmIBJJqgk_tohr-PflcqO9akY&callback=initMap&libraries=places "></script>
-
 </body>
 
 </html>
