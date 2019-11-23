@@ -134,6 +134,7 @@ function renderPlaceDetails(place) {
   else {
     document.getElementById('place-phoneNumber').textContent = 'Not available';
   }
+ 
 
   // Assign a five-star rating to the hotel, using a black star ('&#10029;')
   // to indicate the rating the hotel has earned, and a white star ('&#10025;')

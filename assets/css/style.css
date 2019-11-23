@@ -213,7 +213,9 @@ div#map {
 
 
 /*----------------Info Window---------------*/
-
+#info-content{
+    max-width: 300px;
+}
 #place-details {
     margin-left: 0;
     color: #000;
@@ -408,6 +410,9 @@ div#map {
   
     display: none;
     font-size: 80%;
+}
+.info-content{
+    display: none;
 }
 
 .content-img-mobile {
