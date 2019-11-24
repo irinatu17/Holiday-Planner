@@ -1,16 +1,10 @@
 $(document).ready(function() {
 
-    //Hides dropdown menus and popups when the page loads---------------------------------
+    //Hides readmore-info cards and carousel pictures when the page loads---------------------------------
     $('.readmore-info').hide();
     $('.img-carousel').hide();
 
-        $(".img-packages").mouseout(function() {
-            $(this).next().hide();
-        });
 
-        $(".img-packages").mouseover(function() {
-            $(this).next().show();
-        });
 
     //Showing carousel modals by clicking the image--------------------------------------
 
@@ -42,22 +36,60 @@ $(document).ready(function() {
         $("#GreeceModal").modal("show");
     });
 
+    //Adding shadow to the cards when they are hovered--------------------------------------
 
-
-
-
-
-    $(".card").mouseout(function() {
+    $(".card-img").mouseout(function() {
         $(this).css("box-shadow", "0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)");
     });
-    $(".card").mouseover(function() {
+    $(".card-img").mouseover(function() {
         $(this).css("box-shadow", "10px 10px 5px grey");
     });
-
+    
     $(".btn-readmore").click(function() {
-        $(this).next("p.readmore-info").slideToggle();
+        $(this).next().slideToggle();
+        $('.content-img').show();
+
+    });
+    $(".img-packages").mouseout(function() {
+        $(this).next().hide();
+    });
+    $(".img-packages").mouseover(function() {
+        $(this).next().show();
     });
 
+    
 
+
+    //Sliding up and down section with text by clicking ReadMore button-------------------------------------
+    /*  $(".btnReadmoreMorocco").click(function() {
+         $btnReadmoreMorocco = $(this);
+         $readmoreMorocco = $btnReadmoreMorocco.next();
+         $readmoreMorocco.slideToggle(500)
+       
+     });
+     $(".btn-readmore").click(function() {
+          $(this).next().slideToggle();
+      });
+      $(".btn-readmore").click(function() {
+          $(this).next().slideToggle();
+      });
+      $(".btn-readmore").click(function() {
+          $(this).next().slideToggle();
+      });
+      $(".btn-readmore").click(function() {
+          $(this).next().slideToggle();
+      });
+      $(".btn-readmore").click(function() {
+          $(this).next().slideToggle();
+      });
+      $(".btn-readmore").click(function() {
+          $(this).next().slideToggle();
+      });
+      $(".btn-readmore").click(function() {
+          $(this).next().slideToggle();
+      });
+      $(".btn-readmore").click(function() {
+          $(this).next().slideToggle();
+      });*/
 
 });

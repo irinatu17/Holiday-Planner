@@ -56,11 +56,10 @@ The project has been deployed on GitHub Pages.
 
 To run locally, you can clone this repository directly into the editor by pasting git clone https://github.com/irinatu17/holiday-planner.git into your terminal.
 ## Credits
-
 ### Content
 All content in the "About" and "Travel packages" sections in this website were written by me
 ### Media
-The pictures used in this site were obtained from https://unsplash.com/, a stock image library, and from from personal archive.
+The pictures used in this site were obtained from [https://unsplash.com/], a stock image library, and from from personal archive.
 ### Acknowledgements
 
 **This is for educational use only.**
