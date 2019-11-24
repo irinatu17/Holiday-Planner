@@ -47,8 +47,6 @@ $(document).ready(function() {
     
     $(".btn-readmore").click(function() {
         $(this).next().slideToggle();
-        $('.content-img').show();
-
     });
     $(".img-packages").mouseout(function() {
         $(this).next().hide();
