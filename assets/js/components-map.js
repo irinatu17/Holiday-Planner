@@ -1,12 +1,11 @@
 $(document).ready(function() {
 
-    //Hides readmore-info cards and carousel pictures when the page loads---------------------------------
-    $('.readmore-info').hide();
+    //Hiding readmore-info cards and carousel pictures when the page loads
+   $('.readmore-info').hide();
     $('.img-carousel').hide();
 
 
-
-    //Showing carousel modals by clicking the image--------------------------------------
+    //Showing carousel modals by clicking the image
 
     $("#Morocco").click(function() {
         $("#MoroccoModal").modal("show");
@@ -36,7 +35,7 @@ $(document).ready(function() {
         $("#GreeceModal").modal("show");
     });
 
-    //Adding shadow to the cards when they are hovered--------------------------------------
+    //Adding shadow to the cards when they are hovered
 
     $(".card-img").mouseout(function() {
         $(this).css("box-shadow", "0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)");
@@ -46,7 +45,7 @@ $(document).ready(function() {
     });
     
     $(".btn-readmore").click(function() {
-        $(this).next().slideToggle();
+        $(this).next("div.readmore-info").slideToggle("slow");
     });
     $(".img-packages").mouseout(function() {
         $(this).next().hide();
@@ -54,40 +53,4 @@ $(document).ready(function() {
     $(".img-packages").mouseover(function() {
         $(this).next().show();
     });
-
-    
-
-
-    //Sliding up and down section with text by clicking ReadMore button-------------------------------------
-    /*  $(".btnReadmoreMorocco").click(function() {
-         $btnReadmoreMorocco = $(this);
-         $readmoreMorocco = $btnReadmoreMorocco.next();
-         $readmoreMorocco.slideToggle(500)
-       
-     });
-     $(".btn-readmore").click(function() {
-          $(this).next().slideToggle();
-      });
-      $(".btn-readmore").click(function() {
-          $(this).next().slideToggle();
-      });
-      $(".btn-readmore").click(function() {
-          $(this).next().slideToggle();
-      });
-      $(".btn-readmore").click(function() {
-          $(this).next().slideToggle();
-      });
-      $(".btn-readmore").click(function() {
-          $(this).next().slideToggle();
-      });
-      $(".btn-readmore").click(function() {
-          $(this).next().slideToggle();
-      });
-      $(".btn-readmore").click(function() {
-          $(this).next().slideToggle();
-      });
-      $(".btn-readmore").click(function() {
-          $(this).next().slideToggle();
-      });*/
-
 });
