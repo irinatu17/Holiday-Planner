@@ -32,7 +32,7 @@ In the “Map” section, I wanted them to be able to quickly access different e
 
 ### Skeleton
 
-Wireframes can be found [here](../assets/wireframes/Wireframes.pdf)
+Wireframes can be found [here](https://github.com/irinatu17/holiday-planner/blob/master/assets/wireframes/Wireframes.pdf)
 
 ### Surface
 
@@ -169,5 +169,7 @@ This is a list of some websites that helped me during development to get some in
 5. Dribble 
 
 As well, I would like to thank my mentor Rahul Lakhanpal and all the tutors in the Code Institute for their help, advice and support throughout the project.
+
+
 **This is for educational use only.**
 
