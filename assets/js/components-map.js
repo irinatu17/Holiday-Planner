@@ -43,10 +43,11 @@ $(document).ready(function() {
     $(".card-img").mouseover(function() {
         $(this).css("box-shadow", "10px 10px 5px grey");
     });
-    
+    //Stiding down and up the paragraph, when the Read more button is clicked
     $(".btn-readmore").click(function() {
         $(this).next("div.readmore-info").slideToggle("slow");
     });
+    //Showes and hides the additional information about packages, when the image is hovered
     $(".img-packages").mouseout(function() {
         $(this).next().hide();
     });

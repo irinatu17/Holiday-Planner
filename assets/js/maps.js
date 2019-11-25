@@ -39,7 +39,7 @@ function initMap() {
       document.getElementById('searchPlace').placeholder = 'Where are you going?';
     }
   }
-  //Nearby establishment search by click---------------------------
+  //Nearby place search by click---------------------------
   placesService = new google.maps.places.PlacesService(map);
   
   document.getElementById("accommodation").addEventListener("click", function() {
@@ -109,8 +109,8 @@ function clearMarkers() {
   }
   markers = [];
 }
-// Get the place details for a hotel. Show the information in an info window,
-// anchored on the marker for the hotel that the user selected.
+// Get the place details for a place. Show the information in an info window,
+// anchored on the marker for the place that the user selected.
 function showInfoWindow() {
   var marker = this;
   placesService.getDetails({ placeId: marker.placeResult.place_id },
@@ -136,8 +136,8 @@ function renderPlaceDetails(place) {
   }
  
 
-  // Assign a five-star rating to the hotel, using a black star ('&#10029;')
-  // to indicate the rating the hotel has earned, and a white star ('&#10025;')
+  // Assign a five-star rating to the place, using a black star ('&#10029;')
+  // to indicate the rating the place has earned, and a white star ('&#10025;')
   // for the rating points not achieved.
   if (place.rating) {
     var ratingHtml = '';

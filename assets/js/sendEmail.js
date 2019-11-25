@@ -1,3 +1,4 @@
+//Allowes to send the e-mail when the form is successfully complited
 function sendMail(contactForm) {
     emailjs.send("gmail", "holiday_planner", {
             "from_name": contactForm.name.value,
