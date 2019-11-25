@@ -164,7 +164,7 @@ Pictures in the “Travel packages” section were taken from free available Goo
 This is a list of some websites that helped me during development to get some inspiration, find information about technologies and features used or to find relevant examples: 
 1. W3schools
 2. Google Maps Platform Documentation 
-3. 3. Google Places API documentation.
+3. Google Places API documentation.
 4. Stack Overflow
 5. Dribble 
 
