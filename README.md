@@ -150,7 +150,7 @@ The deployed site updates automatically upon new commits to the master branch.
 
 In order for the website to deploy correctly on GitHub pages, the landing page is named index.html.
 
-To run locally, you can clone this repository directly into the editor of your choice by pasting git clone https://github.com/hschafer2017/HSCHAFER-Portfolio.git into your terminal. To cut ties with this GitHub repository, type git remote rm origin into the terminal.
+To run locally, you can clone this repository directly into the editor of your choice by pasting git clone https://github.com/irinatu17/holiday-planner.git into your terminal. To cut ties with this GitHub repository, type git remote rm origin into the terminal.
 ## Credits
 ### Content
 All the content in the "About" and the "Travel packages" sections of this website were written by me.
