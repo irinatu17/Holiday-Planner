@@ -383,28 +383,58 @@ footer {
     font-weight: 300;
 }
 
-.btn-red {
-    color: #020202;
+.button{
+    font-family: 'Open+Sans', sans-serif;
+    padding: .7rem 1.9rem;
+    display: inline-block;
+    border-radius: 10rem;
+    transition: all .2s;
+    position: relative;
+    font-size: 1.1rem;
+    letter-spacing: 1.5px;
+}
+
+.button:hover{
+    transform: translateY(-3px);
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, .2);
+}
+
+.button:active,
+button:focus{
+    transform: translateY(-1px);
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .2);
+    outline: none;
+}
+
+.btn-yellow{
+    color: #000;
     background-color: #f7c00f;
-    ;
     border-color: #f7c00f;
-    ;
 }
 
-.btn-red:hover,
-.btn-red:active,
-.btn-red:focus,
-.btn-red:active:focus {
-    background-color: #d0a417;
-    font-weight: bold;
+.button::after{
+    content: "";
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    border-radius: 10rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: all .4s;
 }
 
-.button-submit {
-    margin-top: 15px;
-    margin-bottom: 20px;
-    background-color: darkgreen;
-    color: #fafafa;
+.btn-yellow::after{
+    background-color: #f7c00f;
 }
+
+.button:hover::after{
+    transform: scaleX(1.4) scaleY(1.6);
+    opacity: 0;
+}
+
+
 
 /* for laptop and tablet */
 
