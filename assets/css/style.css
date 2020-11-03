@@ -157,14 +157,6 @@ body {
     border-bottom: 3px solid #f7c00f;
 }
 
-.arrows-icon {
-    display: none;
-}
-
-.icon-mobile {
-    display: inline;
-    font-size: 25px;
-}
 
 /*---------------Reasons to be with us ---------------*/
 
@@ -453,14 +445,6 @@ footer {
 
     .about-section-right-on-lg {
         text-align: right;
-    }
-
-    .icon-mobile {
-        display: none;
-    }
-
-    .arrows-icon {
-        display: inline;
     }
 
     .heading-left {
