@@ -28,7 +28,8 @@ function initMap() {
 
   autocomplete.addListener('place_changed', onPlaceChanged);
 
-  //Place search---------------------------------------
+  //Place search
+
   function onPlaceChanged() {
     var place = autocomplete.getPlace();
     if (place.geometry) {
@@ -39,7 +40,9 @@ function initMap() {
       document.getElementById('searchPlace').placeholder = 'Where are you going?';
     }
   }
-  //Nearby place search by click---------------------------
+
+  //Nearby place search by click
+
   placesService = new google.maps.places.PlacesService(map);
   
   document.getElementById("accommodation").addEventListener("click", function() {
@@ -47,28 +50,34 @@ function initMap() {
     clearMarkers();
     searchPlaces();
   });
+
   document.getElementById("restaurant").addEventListener("click", function() {
     placeType = ['restaurant', 'bar'];
     clearMarkers();
     searchPlaces();
   });
+
   document.getElementById("attraction").addEventListener("click", function() {
     placeType = ['night_club', 'zoo', 'museum', 'amusement_park', 'park'];
     clearMarkers();
     searchPlaces();
   });
+
   document.getElementById("store").addEventListener("click", function() {
     placeType = ['store', 'shopping_mall'];
     clearMarkers();
     searchPlaces();
   });
 
-  //Sets the info window in the place details html element------------------------------
+  //Sets the info window in the place details html element
+
   infoWindow = new google.maps.InfoWindow({
     content: document.getElementById('info-content')
   });
 }
-//Search places---------------------------------------------------------
+
+//Search places
+
 function searchPlaces() {
   var search = {
     bounds: map.getBounds(),
@@ -76,31 +85,36 @@ function searchPlaces() {
   };
   placesService.nearbySearch(search, function(results, status) {
     if (status === google.maps.places.PlacesServiceStatus.OK) {
-      //Clear markers---------------------------------------------------
+
+      //Clear markers
       clearMarkers();
-      //Create markers----------------------------------------------------
+
+      //Create markers
       for (var i = 0; i < results.length; i++) {
         markers[i] = new google.maps.Marker({
           position: results[i].geometry.location,
           animation: google.maps.Animation.DROP
         });
         markers[i].placeResult = results[i];
-        google.maps.event.addListener(markers[i], 'click', showInfoWindow); //Show info window when user clicks on a marker---
-        //google.maps.event.addListener(markers[i], 'click', showInfoWindow); Show info window when user clicks on a marker---
+        google.maps.event.addListener(markers[i], 'click', showInfoWindow); //Show info window when user clicks on a marker
+
+        //google.maps.event.addListener(markers[i], 'click', showInfoWindow); Show info window when user clicks on a marker
         setTimeout(dropMarker(i), i * 100);
       }
 
     }
   });
 }
-//Add markers to map----------------------------
+
+//Add markers to map
+
 function dropMarker(i) {
   return function() {
     markers[i].setMap(map);
   };
 }
 
-//Clear markers---------------------------------
+//Clear markers
 function clearMarkers() {
   for (var i = 0; i < markers.length; i++) {
     if (markers[i]) {
@@ -109,6 +123,7 @@ function clearMarkers() {
   }
   markers = [];
 }
+
 // Get the place details for a place. Show the information in an info window,
 // anchored on the marker for the place that the user selected.
 function showInfoWindow() {
@@ -156,7 +171,7 @@ function renderPlaceDetails(place) {
     document.getElementById('place-rating-wrapper').style.display = 'none';
   }
 
-  //This creates a link to the website-------
+  //This creates a link to the website
 
   if (place.website) {
     document.getElementById('place-website-wrapper').style.display = '';
