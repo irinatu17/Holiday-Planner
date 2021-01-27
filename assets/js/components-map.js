@@ -65,4 +65,10 @@ $(document).ready(function() {
     $(".img-packages").mouseover(function() {
         $(this).next().show();
     });
+
+    // Navbar becomes visible when scrolled, transparancy removed
+    $(window).scroll(function(){
+        $('nav').toggleClass('scrolled', $(this).scrollTop() > 1080);
+     });
+
 });
