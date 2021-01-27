@@ -81,7 +81,7 @@ i. Open the page, go to the “Map” section at the top of the site.
 
 ii. Enter a city (desired destination) into the search box and make sure that the autocomplete shows suggested cities.
 
-iii. Click on one of the suggested variants and verify that the map loads with that location in the centre.
+iii. Click on one of the suggested letiants and verify that the map loads with that location in the centre.
 
 2. Display the hotels nearby:
 

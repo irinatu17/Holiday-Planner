@@ -1,11 +1,11 @@
 //Global Variables---------------------------------
-var map;
-var infoWindow;
-var placesService;
-var markers = [];
-var ireland = { lat: 53.2, lng: -9.0 };
-var autocomplete;
-var placeType;
+let map;
+let infoWindow;
+let placesService;
+let markers = [];
+let ireland = { lat: 53.2, lng: -9.0 };
+let autocomplete;
+let placeType;
 
 
 //Initialize Map------------------------------------
@@ -31,7 +31,7 @@ function initMap() {
   //Place search
 
   function onPlaceChanged() {
-    var place = autocomplete.getPlace();
+    let place = autocomplete.getPlace();
     if (place.geometry) {
       map.panTo(place.geometry.location);
       map.setZoom(13);
@@ -79,7 +79,7 @@ function initMap() {
 //Search places
 
 function searchPlaces() {
-  var search = {
+  let search = {
     bounds: map.getBounds(),
     types: placeType
   };
@@ -90,7 +90,7 @@ function searchPlaces() {
       clearMarkers();
 
       //Create markers
-      for (var i = 0; i < results.length; i++) {
+      for (let i = 0; i < results.length; i++) {
         markers[i] = new google.maps.Marker({
           position: results[i].geometry.location,
           animation: google.maps.Animation.DROP
@@ -116,7 +116,7 @@ function dropMarker(i) {
 
 //Clear markers
 function clearMarkers() {
-  for (var i = 0; i < markers.length; i++) {
+  for (let i = 0; i < markers.length; i++) {
     if (markers[i]) {
       markers[i].setMap(null);
     }
@@ -127,7 +127,7 @@ function clearMarkers() {
 // Get the place details for a place. Show the information in an info window,
 // anchored on the marker for the place that the user selected.
 function showInfoWindow() {
-  var marker = this;
+  let marker = this;
   placesService.getDetails({ placeId: marker.placeResult.place_id },
     function(place, status) {
       if (status !== google.maps.places.PlacesServiceStatus.OK) {
@@ -155,8 +155,8 @@ function renderPlaceDetails(place) {
   // to indicate the rating the place has earned, and a white star ('&#10025;')
   // for the rating points not achieved.
   if (place.rating) {
-    var ratingHtml = '';
-    for (var i = 0; i < 5; i++) {
+    let ratingHtml = '';
+    for (let i = 0; i < 5; i++) {
       if (place.rating < (i + 0.5)) {
         ratingHtml += '&#10025;';
       }
