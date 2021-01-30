@@ -1,12 +1,19 @@
 @import url('https://fonts.googleapis.com/css?family=Amatic+SC:400,700|Lato:100,100i,400,700,900|Open+Sans:300,300i,400,600,700,800|Nanum+Pen+Script:400,700|Oxygen&display=swap');
 
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0; 
+}
+
 body {
     font-family: 'Lato', sans-serif;
-    margin: 0;
-    padding: 0;
     height: 100%;
     background-color: #fcfafa;
     width: 100vw;
+    line-height: 1.7;
+    overflow-x: hidden;
+    font-weight: 400;
 }
 
 .uppercase {
@@ -15,47 +22,55 @@ body {
 
 /*------------Navbar-----------------*/
 
-.header-fixed {
-    position: absolute;
-    top: 5px;
-    right: 0;
-    left: 10px;
-    z-index: 1;
-    min-width: 90px;
+.navbar {
+    padding: .7rem 1rem;
+    transition: all 0.3s ease-in-out;
+    background-color: rgba(82, 82, 82, 0.123);
 }
 
-.transparent {
-    background-color: transparent;
-    border: none;
-}
-
-#logo {
-    padding-left: 10px;
-    float: left;
-    font-size: 100%;
-    text-transform: uppercase;
-    font-family: 'Oxygen', sans-serif;
-    letter-spacing: 2px;
-    color: white;
-    text-shadow: 0 2px black;
-    line-height: 55px;
-}
-
-.nav-item {
-    float: right;
-    margin-right: 30px;
+/*Changes navbar background color on scroll*/
+.navbar.bg-nav-colored {
+    background-color: #525252;
+    padding: .4rem 1rem;
 }
 
 .nav-link {
-    color: black;
-    font-size: 1rem;
-    text-shadow: 2px 1px white;
-    font-weight: 500;
-    letter-spacing: 3px;
+    color: #fff !important;
+    font-size: 1.1rem;
+    font-family: 'Oxygen', sans-serif;
+    letter-spacing: 2px;
+    text-shadow: 0 1px 3px rgba(61, 60, 60, 0.795);
+    text-transform: uppercase;
+    border-bottom: 1px solid transparent; 
+    transition: all 0.3s;
+    margin-right: .5rem;
+    margin-left: .5rem;
 }
 
-.nav-link:hover {
-    border-bottom: 1px solid #777777;
+.nav-link:hover { 
+    border-bottom: 1px solid  #f7f7f7; 
+}
+
+#logo {
+    text-transform: uppercase;
+    font-family: 'Oxygen', sans-serif;
+    letter-spacing: 3px;
+    font-size: 1rem;
+    color: #f7f7f7;
+}
+
+.navbar-toggler {
+    background-color: #f7f7f7;
+    border-radius: 50%;
+    height: 3rem;
+    width: 3rem;
+    font-size: .9rem;
+  }
+
+.navbar-toggler:focus,
+.navbar-toggler:active {
+    border-color: transparent;
+    outline: none;
 }
 
 /*--------Search, home section-------------*/
@@ -68,12 +83,12 @@ body {
     padding-top: 4rem;
     padding-bottom: 4rem;
     color: #fff;
-    background: url(../images/bg-main.jpg) no-repeat center center;
+    background: url(../images/bg-main.jpg) no-repeat top center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    height: 60vh;
+    height: 80vh;
 }
 
 .search-content-wrapper {
@@ -428,9 +443,6 @@ footer {
 /* for laptop and tablet */
 
 @media (min-width: 768px) {
-    #logo {
-        font-size: 150%;
-    }
 
     .heading-main {
         font-size: 36px;
@@ -453,14 +465,14 @@ footer {
 /*for tablet */
 
 @media (min-width: 768px) and (max-width: 991px) {
-    .nav-item {
+    /* .nav-item {
         margin-right: 10px;
     }
 
     .nav-link {
         font-size: 100%;
         letter-spacing: 1px;
-    }
+    } */
 
     .heading-tours-tablet {
         font-size: 12px;
