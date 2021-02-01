@@ -245,22 +245,6 @@ li.nav-item {
     font-size: 80%;
 }
 
-.btn-readmore {
-    background-color: #f7c00f;
-    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    border-radius: 23px;
-    width: 10rem;
-    height: 40px;
-    padding: 0;
-    transition-timing-function: ease-in;
-}
-
-.btn-readmore:hover {
-    box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
-    background-color: #d0a417;
-    font-weight: bold;
-}
-
 /*------------------Footer--------------------------*/
 
 footer {
@@ -382,35 +366,28 @@ footer {
     margin: 5px;
 }
 
-/* Buttons */
 
-.btn {
-    font-family: 'Open+Sans', sans-serif;
-    border-radius: 23px;
-    width: 10rem;
-    padding: 0;
-}
+/* BUTTONS */
 
-.btn-small {
-    width: 60px;
-    height: 40px;
-    font-weight: 300;
-}
-
-.button{
-    font-family: 'Open+Sans', sans-serif;
+.button,
+.button:link,
+.button:visited{
+    font-family: 'Lato', sans-serif;
     padding: .7rem 1.9rem;
     display: inline-block;
     border-radius: 10rem;
     transition: all .2s;
     position: relative;
     font-size: 1.1rem;
-    letter-spacing: 1.5px;
+    text-decoration: none;
+    letter-spacing: 1px;
+    color:  rgb(56, 53, 53);
 }
 
 .button:hover{
     transform: translateY(-3px);
     box-shadow: 0 1rem 2rem rgba(0, 0, 0, .2);
+    color: #212529;
 }
 
 .button:active,
@@ -426,7 +403,25 @@ footer {
     border-color: #f7c00f;
 }
 
-.button::after{
+/*Readmore btn*/
+.btn-readmore {
+    border-radius: 1.3rem;
+    width: 10rem;
+    height: 2.5rem;
+    transition: all .2s ease-in-out;
+}
+
+.btn-readmore:hover,
+.btn-readmore:active,
+.btn-readmore:focus  {
+    background-color: #e7b718;
+    outline: none;
+    transform: translateY(-2px);
+    box-shadow: 0 .2rem .5rem rgba(0, 0, 0, .2);
+}
+
+/*Submit btn*/
+.btn-submit::after{
     content: "";
     display: inline-block;
     height: 100%;
@@ -437,18 +432,16 @@ footer {
     left: 0;
     z-index: -1;
     transition: all .4s;
-}
-
-.btn-yellow::after{
     background-color: #f7c00f;
 }
 
-.button:hover::after{
+.btn-submit:hover::after{
     transform: scaleX(1.4) scaleY(1.6);
     opacity: 0;
 }
 
 
+/*MEDIA QUERIES*/
 /* for laptop and tablet */
 
 @media (min-width: 768px) {
