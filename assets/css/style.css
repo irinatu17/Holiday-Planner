@@ -31,10 +31,11 @@ body {
 /*Changes navbar background color on scroll*/
 .navbar.bg-nav-colored {
     background-color: #525252;
-    padding: .4rem 1rem;
+    padding: .5rem 1rem;
 }
 
 .nav-link {
+    display: inline-block;
     color: #fff !important;
     font-size: 1.1rem;
     font-family: 'Oxygen', sans-serif;
@@ -47,10 +48,30 @@ body {
     margin-left: .5rem;
     padding-top: .2rem;
     padding-bottom: .2rem;
+    position: relative;
 }
 
-.nav-link:hover { 
-    border-bottom: 1px solid  #f7f7f7; 
+.nav-link,
+.nav-link:after,
+.nav-link:before {
+    transition: all .4s ease-in-out;
+}
+
+.nav-link:after,
+.nav-link:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #f7f7f7;
+    margin: auto;
+    width: 0%;
+    height: 1px;
+}
+
+.nav-link:hover:after {
+    width: 90%;
 }
 
 #logo {
@@ -91,11 +112,11 @@ li.nav-item {
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    height: 90vh;
+    height: 95vh;
 }
 
 .search-content-wrapper {
-    margin-top: 12rem;
+    margin-top: 13.1rem;
     padding: 1rem 1.5rem;
     background-color: rgba(34, 34, 34, 0.329);
     border-radius: .3rem;
@@ -151,6 +172,7 @@ li.nav-item {
 #about-section-wrapper {
     background-color: #f9f7f5;
     color: #081216;
+    padding-top: 4rem;
 }
 
 .about-paragraphs {
@@ -444,8 +466,13 @@ footer {
 /*MEDIA QUERIES*/
 
 @media (min-width: 360px) {
+
     .search-content-wrapper {
         margin-top: 8rem;
+    }
+
+    .home-container {
+        height: 90vh;
     }
 }
 /* for laptop and tablet */
