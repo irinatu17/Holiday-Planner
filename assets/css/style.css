@@ -20,10 +20,14 @@ body {
     text-transform: uppercase;
 }
 
-/*------------Navbar-----------------*/
+.primary-heading {
+    font-size: 1.6rem;
+}
+
+/*------------NAVBAR-----------------*/
 
 .navbar {
-    padding: .7rem 1rem;
+    padding: .2rem 1rem;
     transition: all 0.3s ease-in-out;
     background-color: rgba(82, 82, 82, 0.123);
 }
@@ -192,13 +196,20 @@ li.nav-item {
 }
 
 .about-heading {
-    font-size: 150%;
-    text-shadow: 4px 3px lightgrey;
+    text-shadow: 0 2px 3px lightgrey;
     font-weight: 500;
     text-transform: uppercase;
     font-family: 'Oxygen', sans-serif;
     letter-spacing: 2px;
     border-bottom: 3px solid #f7c00f;
+}
+
+.about-heading-wrapper  {
+    background-color: #fffffb;
+    padding: .4rem .8rem;
+    border-radius: .5rem;
+    border: 1px solid #000000;
+    margin-top: -5.5rem;
 }
 
 
@@ -340,7 +351,10 @@ footer {
 
 .fa-instagram:hover {
     background: #d6249f;
-    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+    background: radial-gradient(circle at 30% 107%,
+                                 #fdf497 0%, #fdf497 5%,
+                                #fd5949 45%, #d6249f 60%,
+                                 #285AEB 90%);
 }
 
 .copyright {
@@ -498,6 +512,10 @@ footer {
         padding: .5rem 1rem;
     }
 
+    .navbar {
+        padding: .7rem 1rem;
+    }
+
     #searchPlace {
         width: 400px;
     }
@@ -508,6 +526,14 @@ footer {
 
     .heading-left {
         text-align: left;
+    }
+
+    .about-heading-wrapper  {
+        background-color: #fffffb;
+        padding: 1.5rem 2.5rem;
+        border-radius: .5rem;
+        border: 1px solid #000000;
+        margin-top: -7rem;
     }
 }
 
