@@ -194,6 +194,19 @@ li.nav-item {
 .planning-image {
     width: 60%;
     border-radius: 3px;
+    box-shadow: 0 .8rem 2rem rgba(0, 0, 0, 0.4);
+}
+
+.travelwithus-image {
+    float: right;
+    width: 60%;
+    border-radius: 3px;
+    box-shadow: 0 .8rem 2rem rgba(0, 0, 0, 0.4);
+}
+
+.about-mobile-only-image {
+    border-radius: 3px;
+    box-shadow: 0 .3rem 1rem rgba(0, 0, 0, 0.534);
 }
 
 .about-heading {
@@ -541,6 +554,15 @@ footer {
         top: .8rem;
         left: 15.5rem;
     }
+
+    .travelwithus-image2 {
+        position: absolute;
+    }
+
+    .travelwithus-image2 {
+        top: 1rem;
+        right: 17rem;
+    }
 }
 
 /*for tablet */
@@ -596,6 +618,11 @@ footer {
     .planning-image-2 {
         top: 2.5rem;
         left: 12rem;
+    }
+
+    .travelwithus-image2 {
+        top: 4rem;
+        right: 12rem;
     }
 }
 
