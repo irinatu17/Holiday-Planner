@@ -228,16 +228,18 @@ li.nav-item {
 
 /*---------------Reasons to be with us ---------------*/
 
-
-.reasonsBeWithUs-item {
-    padding-left: 10px;
-    padding-right: 10px;
-}
-
 .icon-about {
     color: #f7c00f;
-    font-size: 25px;
-    margin: 12px;
+    font-size: 2rem;
+    margin: 1rem 0;
+}
+
+.benefit-paragraph {
+    font-size: 1.1rem;
+}
+
+.card-benefit{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 /*------------Travel packages section----------------*/
@@ -251,9 +253,7 @@ li.nav-item {
     transition-timing-function: ease-in;
 }
 
-.card {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
+
 
 .img-container {
     position: relative;
@@ -619,7 +619,7 @@ footer {
 
     .travelwithus-image2 {
         top: 4rem;
-        right: 12rem;
+        right: 12rem;     
     }
 }
 
