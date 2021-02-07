@@ -232,6 +232,7 @@ li.nav-item {
     color: #f7c00f;
     font-size: 2rem;
     margin: 1rem 0;
+    text-shadow: 0 1px 1px rgba(167, 156, 156, 0.774);
 }
 
 .benefit-paragraph {
@@ -239,7 +240,8 @@ li.nav-item {
 }
 
 .card-benefit{
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    box-shadow: 0 4px .5rem 0 rgba(0, 0, 0, 0.2),
+                0 6px 1.2rem 0 rgba(0, 0, 0, 0.19);
 }
 
 /*------------Travel packages section----------------*/
