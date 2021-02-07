@@ -140,11 +140,15 @@ li.nav-item {
 }
 
 #searchPlace {
-    width: inherit;
+    width: 90%;
     height: 40px;
     padding: 5px 10px 5px 10px;
 }
 
+#searchPlace:focus,
+#searchPlace:active{
+    outline-color:  #f7c00f;
+}
 
 /*--------Map section-------------*/
 
@@ -501,7 +505,7 @@ footer {
         height: 90vh;
     }
 }
-/* for laptop and tablet */
+/* for TABLET : 768px min */
 
 @media (min-width: 768px) {
 
@@ -529,7 +533,7 @@ footer {
     }
 
     #searchPlace {
-        width: 400px;
+        width: 70%;
     }
 
     .about-section-right-on-lg {
@@ -576,7 +580,7 @@ footer {
         letter-spacing: 1px;
     } */
 
-    .heading-tours-tablet {
+    /* .heading-tours-tablet {
         font-size: 12px;
     }
 
@@ -599,7 +603,7 @@ footer {
 
     .bottom-right {
         bottom: 1.5px;
-    }
+    } */
 
 
 }
@@ -623,6 +627,11 @@ footer {
         top: 4rem;
         right: 12rem;     
     }
+
+    #searchPlace {
+        width: 50%;
+    }
+
 }
 
 @media (min-width: 1800px) {
