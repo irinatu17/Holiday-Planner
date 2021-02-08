@@ -152,22 +152,21 @@ li.nav-item {
 
 /*--------Map section-------------*/
 
-.search-buttons {
-    position: relative;
-    top: -40px;
-    height: 80px;
-}
-
 .btn-main {
     background-color: #f7c00f;
     color: #020202;
     font-weight: 400;
 }
 
-.btn-main:hover {
+.btn-main:hover,
+.btn-main:active,
+.btn-main:focus {
     background-color: #d0a417;
-    font-weight: bold;
+    outline: none;
+    box-shadow: none;
 }
+
+
 
 #map {
     min-height: 550px;
