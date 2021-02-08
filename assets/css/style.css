@@ -156,6 +156,7 @@ li.nav-item {
     background-color: #f7c00f;
     color: #020202;
     font-weight: 400;
+    font-size: .8rem;
 }
 
 .btn-main:hover,
@@ -167,11 +168,9 @@ li.nav-item {
 }
 
 
-
 #map {
     min-height: 550px;
     height: 100%;
-    top: -30px;
 }
 
 /*------------About section----------------*/
@@ -503,6 +502,10 @@ footer {
     .home-container {
         height: 90vh;
     }
+
+    .btn-main {
+        font-size: .9rem;
+    }
 }
 /* for TABLET : 768px min */
 
@@ -565,6 +568,11 @@ footer {
         top: 1rem;
         right: 17rem;
     }
+
+    .btn-main {
+        font-size: 1.1rem;
+    }
+}
 }
 
 /*for tablet */
