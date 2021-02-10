@@ -104,9 +104,9 @@ li.nav-item {
     line-height: 1.4;
 }
 
-/*--------Search, home section-------------*/
+/*--------HERO IMAGE section-------------*/
 
-.home-container {
+.hero-container {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -119,7 +119,7 @@ li.nav-item {
     height: 95vh;
 }
 
-.search-content-wrapper {
+.hero-heading-wrapper {
     margin-top: 13.1rem;
     padding: 1rem 1.5rem;
     background-color: rgba(34, 34, 34, 0.329);
@@ -139,41 +139,7 @@ li.nav-item {
     margin-bottom: 1.5rem;
 }
 
-#searchPlace {
-    width: 90%;
-    height: 40px;
-    padding: 5px 10px 5px 10px;
-}
-
-#searchPlace:focus,
-#searchPlace:active{
-    outline-color:  #f7c00f;
-}
-
-/*--------Map section-------------*/
-
-.btn-main {
-    background-color: #f7c00f;
-    color: #020202;
-    font-weight: 400;
-    font-size: .8rem;
-}
-
-.btn-main:hover,
-.btn-main:active,
-.btn-main:focus {
-    background-color: #d0a417;
-    outline: none;
-    box-shadow: none;
-}
-
-
-#map {
-    min-height: 550px;
-    height: 100%;
-}
-
-/*------------About section----------------*/
+/*------------ABOUT section----------------*/
 
 #about-section-wrapper {
     background-color: #f9f7f5;
@@ -227,9 +193,7 @@ li.nav-item {
     margin-top: -2rem;
 }
 
-
-/*---------------Reasons to be with us ---------------*/
-
+/*---------------BENIFITS ---------------*/
 .icon-about {
     color: #f7c00f;
     font-size: 2rem;
@@ -246,7 +210,24 @@ li.nav-item {
                 0 6px 1.2rem 0 rgba(0, 0, 0, 0.19);
 }
 
-/*------------Travel packages section----------------*/
+/*------------MAP SEARCH section----------------*/
+#map {
+    min-height: 38rem;
+    height: 100%;
+}
+
+#searchPlace {
+    width: 90%;
+    height: 40px;
+    padding: 5px 10px 5px 10px;
+}
+
+#searchPlace:focus,
+#searchPlace:active{
+    outline-color:  #f7c00f;
+}
+
+/*------------TRAVEL PACKAGES section----------------*/
 
 #travel-packages-section {
     background-color: #fff8f866;
@@ -256,8 +237,6 @@ li.nav-item {
 .readmore-info {
     transition-timing-function: ease-in;
 }
-
-
 
 .img-container {
     position: relative;
@@ -418,7 +397,6 @@ footer {
 
 
 /* BUTTONS */
-
 .button,
 .button:link,
 .button:visited{
@@ -445,6 +423,21 @@ footer {
     transform: translateY(-1px);
     box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .2);
     outline: none;
+}
+
+.btn-main {
+    background-color: #f7c00f;
+    color: #020202;
+    font-weight: 400;
+    font-size: .8rem;
+}
+
+.btn-main:hover,
+.btn-main:active,
+.btn-main:focus {
+    background-color: #d0a417;
+    outline: none;
+    box-shadow: none;
 }
 
 .btn-yellow{
@@ -495,11 +488,11 @@ footer {
 
 @media (min-width: 360px) {
 
-    .search-content-wrapper {
+    .hero-heading-wrapper {
         margin-top: 8rem;
     }
 
-    .home-container {
+    .hero-container {
         height: 90vh;
     }
 
@@ -521,7 +514,7 @@ footer {
         letter-spacing: 2px;
     }
 
-    .search-content-wrapper {
+    .hero-heading-wrapper {
         padding: 2rem 3rem;
         margin-top: 1rem;
     }
@@ -573,49 +566,8 @@ footer {
         font-size: 1.1rem;
     }
 }
-}
 
-/*for tablet */
-
-@media (min-width: 768px) and (max-width: 991px) {
-    /* .nav-item {
-        margin-right: 10px;
-    }
-
-    .nav-link {
-        font-size: 100%;
-        letter-spacing: 1px;
-    } */
-
-    /* .heading-tours-tablet {
-        font-size: 12px;
-    }
-
-    .price-tours-tablet {
-        font-size: 11px;
-    }
-
-    .card-body {
-        padding: 1rem;
-    }
-
-    .btn-readmore {
-        width: 120px;
-        height: 25px;
-    }
-
-    .readmore-info {
-        line-height: 1.3;
-    }
-
-    .bottom-right {
-        bottom: 1.5px;
-    } */
-
-
-}
-
-/* for laptop */
+/* for DESKTOP: 991px min*/
 
 @media (min-width: 991px) {
     .btn-readmore {
@@ -641,6 +593,7 @@ footer {
 
 }
 
+/* for larger screens DESKTOP: 1800px min*/
 @media (min-width: 1800px) {
     .container {
         max-width: 90rem !important;
