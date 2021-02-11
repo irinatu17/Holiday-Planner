@@ -12,9 +12,14 @@ let placeType;
 function initMap() {
   map = new google.maps.Map(document.getElementById('map'), {
     center: ireland,
-    zoom: 2
+    zoom: 2,
+    panControl: true,
+    zoomControl: true,
+    streetViewControl: true
   });
-  // Info window with place details
+
+  // Info window with place details (takes the content from index.html
+  // to generate pop-up window on map for each establishment)
   infoWindow = new google.maps.InfoWindow({
     content: document.getElementById('info-content')
   });
@@ -37,7 +42,7 @@ function initMap() {
       map.setZoom(13);
     }
     else {
-      document.getElementById('searchPlace').placeholder = 'Where are you going?';
+      document.getElementById('searchPlace').placeholder = 'Enter a city';
     }
   }
 
