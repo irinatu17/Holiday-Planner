@@ -66,15 +66,6 @@ $(document).ready(function() {
         $(this).next("div.readmore-info").slideToggle("slow");
     });
 
-    //Showes and hides the additional information about packages, when the image is hovered
-    $(".img-packages").mouseout(function() {
-        $(this).next().hide();
-    });
-    
-    $(".img-packages").mouseover(function() {
-        $(this).next().show();
-    });
-
     // Navbar becomes visible when scrolled, transparancy removed
     $(window).scroll(function(){
         $('nav').toggleClass('scrolled', $(this).scrollTop() > 1080);
