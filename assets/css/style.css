@@ -230,8 +230,8 @@ li.nav-item {
 
 #searchPlace {
     width: 90%;
-    height: 40px;
-    padding: 5px 10px 5px 10px;
+    height: 2.5rem;
+    padding: .5rem .8rem;
 }
 
 #searchPlace:focus,
@@ -243,7 +243,14 @@ li.nav-item {
 
 #travel-packages-section {
     background-color: #fff8f866;
-    padding-bottom: 20px;
+    padding-bottom: 1.5rem;
+    padding-top: 6rem;
+}
+
+.packages-heading {
+    margin-top: -2rem;
+    font-size: 1.8rem;
+    text-align: center;
 }
 
 .readmore-info {
@@ -255,11 +262,10 @@ li.nav-item {
     cursor: pointer;
 }
 
-
 .bottom-right {
     position: absolute;
     bottom: 2px;
-    right: 16px;
+    right: 1rem;
 }
 
 .content-img {
@@ -510,6 +516,10 @@ footer {
     .btn-main {
         font-size: .9rem;
     }
+
+    .packages-heading {
+        font-size: 2rem;
+    }
 }
 /* for TABLET : 768px min */
 
@@ -583,6 +593,10 @@ footer {
 
     .map-heading {
         margin-top: -2rem;
+    }
+
+    .packages-heading {
+        font-size: 2.1rem;
     }
 }
 
