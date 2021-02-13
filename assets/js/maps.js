@@ -180,7 +180,7 @@ function renderPlaceDetails(place) {
 
   if (place.website) {
     document.getElementById('place-website-wrapper').style.display = '';
-    document.getElementById('place-website').innerHTML = '<a class= "btn btn-red" href="' + place.website + '" target="_blank">' + 'Website ' + '</a>';
+    document.getElementById('place-website').innerHTML = '<a class= "btn btn-yellow" href="' + place.website + '" target="_blank">' + 'Website ' + '</a>';
   }
   else {
     document.getElementById('place-website-wrapper').style.display = 'none';

@@ -391,7 +391,8 @@ footer {
 /*----------------Info Window---------------*/
 
 #info-content {
-    max-width: 300px;
+    max-width: 18.75rem;
+    width: fit-content;
 }
 
 .info-content {
@@ -408,21 +409,20 @@ footer {
 
 .place-line {
     font-weight: 400;
-    font-size: 1rem;
+    font-size: .8rem;
 }
 
 .place-line-paragraphs {
-    font-weight: 300;
-    font-size: 12px;
+    font-size: .7rem;
 }
 
 #place-name {
-    color: #000;
     font-family: 'Nanum+Pen+Script', sans-serif;
-    font-weight: 500;
+    font-weight: 600;
+    text-transform: uppercase;
     font-size: 1rem;
     border-bottom: 1px solid #f7c00f;
-    margin: 5px;
+    margin: .4rem;
 }
 
 
@@ -610,6 +610,19 @@ footer {
 
     .packages-heading {
         font-size: 2.1rem;
+    }
+
+    .place-line-paragraphs {
+        font-size: .9rem;
+        padding: .2rem;
+    }
+
+    .place-line {
+        font-size: 1rem;
+    }
+    
+    #place-name {
+        font-size: 1.2rem;
     }
 }
 
