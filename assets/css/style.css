@@ -28,6 +28,36 @@ h1 {
     font-size: 1.8rem;
 }
 
+
+/*Loader*/
+#spinner-overlay-wrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000000000;
+    text-align: center;
+    color: #fff;
+    background: rgba(0, 0, 0, 0.9);
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#globe-spinner img {
+    width: 8.5rem;
+    height: 8.5rem;
+    border-radius: 50%;
+    box-shadow: 0px 0px 1.5rem .6rem #f7c00f;
+}
+
+.loading-heading {
+    font-size: 2rem;
+    margin-top: 3rem;
+    text-transform: uppercase;
+    letter-spacing: .5rem;
+}
 /*------------NAVBAR-----------------*/
 
 .navbar {

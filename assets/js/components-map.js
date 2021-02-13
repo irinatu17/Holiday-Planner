@@ -9,6 +9,11 @@ $(function () {
 
 $(document).ready(function() {
 
+    // Globe-spinner loading 
+    $(window).on("load", function () {
+        $("#spinner-overlay-wrapper").fadeOut();
+    });
+
     //Hiding readmore-info cards and carousel pictures when the page loads
    $('.readmore-info').hide();
     $('.img-carousel').hide();
