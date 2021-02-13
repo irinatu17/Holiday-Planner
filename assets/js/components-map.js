@@ -67,8 +67,12 @@ $(document).ready(function() {
     });
 
     //Stiding down and up the paragraph, when the Read more button is clicked
+    // Update the text on the button to "Read less", when the paragraph is toggled
     $(".btn-readmore").click(function() {
         $(this).next("div.readmore-info").slideToggle("slow");
+        $(this).text(function(i, v){
+            return v === 'Read more' ? 'Read less' : 'Read more'
+         })
     });
 
     // Navbar becomes visible when scrolled, transparancy removed
