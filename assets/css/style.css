@@ -298,10 +298,6 @@ li.nav-item {
     text-align: center;
 }
 
-.readmore-info {
-    transition-timing-function: ease-in;
-}
-
 .img-container {
     position: relative;
     cursor: pointer;
@@ -319,8 +315,7 @@ li.nav-item {
     background: rgba(0, 0, 0, 0.4);
     color: #f1f1f1;
     width: 100%;
-    padding: 10px;
-    font-size: 80%;
+    padding: .8rem;
 }
 
 .content-img-mobile {
@@ -331,6 +326,10 @@ li.nav-item {
     width: 100%;
     padding: 10px;
     font-size: 80%;
+}
+
+.heading-card-packages {
+    font-size: 1.1rem;
 }
 
 /*------------------Footer--------------------------*/
@@ -508,8 +507,10 @@ footer {
 
 /*Readmore btn*/
 .btn-readmore {
+    position: absolute;
+    bottom: 1rem;
+    right: 1rem;
     border-radius: 1.3rem;
-    width: 10rem;
     height: 2.5rem;
     transition: all .2s ease-in-out;
 }
@@ -659,12 +660,6 @@ footer {
 /* for DESKTOP: 991px min*/
 
 @media (min-width: 991px) {
-    .btn-readmore {
-        position: absolute;
-        bottom: 20px;
-        right: 1rem;
-        width: 8rem;
-    }
 
     .planning-image-2 {
         top: 2.5rem;
