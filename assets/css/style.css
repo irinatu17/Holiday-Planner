@@ -318,16 +318,6 @@ li.nav-item {
     padding: .8rem;
 }
 
-.content-img-mobile {
-    position: absolute;
-    bottom: 0;
-    background: rgba(0, 0, 0, 0.5);
-    color: #f1f1f1;
-    width: 100%;
-    padding: 10px;
-    font-size: 80%;
-}
-
 .heading-card-packages {
     font-size: 1.1rem;
 }
