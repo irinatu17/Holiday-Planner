@@ -6,6 +6,17 @@ $(function () {
       nav.toggleClass("bg-nav-colored", $(this).scrollTop() > nav.height() );
     })
   });
+  
+bttbutton = document.getElementById("back-to-top-btn");
+// When the user scrolls down 50px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+function scrollFunction() {
+    if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+        bttbutton.style.display = "block";
+    } else {
+        bttbutton.style.display = "none";
+    }
+};
 
 $(document).ready(function() {
 
@@ -78,17 +89,6 @@ $(document).ready(function() {
         left: 0,
         behavior: 'smooth'
         })
-    });
+    })
 
 });
-
-bttbutton = document.getElementById("back-to-top-btn");
-// When the user scrolls down 50px from the top of the document, show the button
-window.onscroll = function() {scrollFunction()};
-function scrollFunction() {
-    if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
-        bttbutton.style.display = "block";
-    } else {
-        bttbutton.style.display = "none";
-    }
-};

@@ -327,11 +327,6 @@ li.nav-item {
     transition: all .2s ease-in;
 }
 
-.card-img:hover {
-    box-shadow: 0 .6rem 1.1rem 0 rgba(0, 0, 0, 0.3);
-    transform: translateY(-4px);
-}
-
 /*------------------Footer--------------------------*/
 
 footer {
@@ -699,6 +694,9 @@ footer {
         max-width: 1140px;
     }
 
+    .card-img:hover {
+        box-shadow: 0 .8rem 1.1rem 0 rgba(0, 0, 0, 0.3);
+    }
 }
 
 /* for larger screens DESKTOP: 1800px min*/
