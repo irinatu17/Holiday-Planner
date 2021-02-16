@@ -534,6 +534,26 @@ footer {
     opacity: 0;
 }
 
+/*Back to top button*/
+.btt-button {
+    position: fixed;
+    height: 2.6rem;
+    width: 2.6rem;
+    bottom: 0.5rem;
+    right: 0.5rem;
+    border-radius: .4rem;
+    background-color: #fcfcfc;
+    display: none;
+    z-index: 9999999999999999999;
+}
+
+.btt-button:hover {
+    background-color: #ebebebfd;
+}
+
+.btt-link{
+    cursor: pointer;
+}
 
 /*MEDIA QUERIES*/
 
