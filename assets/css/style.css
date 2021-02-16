@@ -34,7 +34,7 @@ h2 {
     position: fixed;
     top: 0;
     left: 0;
-    z-index: 1000000000;
+    z-index: 99999999999999999999;
     text-align: center;
     color: #fff;
     background: rgb(0, 0, 0);
