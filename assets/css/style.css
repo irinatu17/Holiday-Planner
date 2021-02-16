@@ -407,6 +407,9 @@ footer {
 }
 
 /*------------------Contact Form--------------------------*/
+#contact-form {
+    width: 100%;
+}
 
 .contact-heading {
     font-family: "Exo", sans-serif;
@@ -686,6 +689,10 @@ footer {
     #place-name {
         font-size: 1.2rem;
     }
+
+    #contact-form {
+        width: 70%;
+    }
 }
 
 /* for DESKTOP: 991px min*/
@@ -728,5 +735,9 @@ footer {
     .heading-card-packages,
     .travel-packages-paragraph {
         font-size: 1.2rem;
+    }
+
+    #contact-form {
+        width: 50%;
     }
 }
