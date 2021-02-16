@@ -319,7 +319,7 @@ li.nav-item {
 }
 
 .heading-card-packages {
-    font-size: 1.1rem;
+    font-size: 1rem;
 }
 
 .card-img {
@@ -356,26 +356,6 @@ footer {
     text-decoration: none;
 }
 
-/*------------------Footer, Contact Form--------------------------*/
-
-.contact-heading {
-    font-family: "Exo", sans-serif;
-    font-weight: 300;
-    margin-bottom: 20px;
-}
-
-.center-form {
-    padding-top: 5px;
-    margin: 0 auto;
-    width: 90%;
-}
-
-.form-group {
-    text-align: left;
-}
-
-/*------------------Footer, Follow us section--------------------------*/
-
 .social-links li a i {
     width: 2rem;
     height: 2rem;
@@ -406,6 +386,24 @@ footer {
                                  #fdf497 0%, #fdf497 5%,
                                 #fd5949 45%, #d6249f 60%,
                                  #285AEB 90%);
+}
+
+/*------------------Contact Form--------------------------*/
+
+.contact-heading {
+    font-family: "Exo", sans-serif;
+    font-weight: 300;
+    margin-bottom: 20px;
+}
+
+.center-form {
+    padding-top: 5px;
+    margin: 0 auto;
+    width: 90%;
+}
+
+.form-group {
+    text-align: left;
 }
 
 /*----------------Info Window---------------*/
@@ -545,7 +543,7 @@ footer {
     border-radius: .4rem;
     background-color: #fcfcfc;
     display: none;
-    z-index: 9999999999999999999;
+    z-index: 999999999;
 }
 
 .btt-button:hover {
@@ -574,6 +572,10 @@ footer {
 
     .packages-heading {
         font-size: 2rem;
+    }
+
+    .heading-card-packages {
+        font-size: 1.1rem;
     }
 }
 /* for TABLET : 768px min */
@@ -703,5 +705,9 @@ footer {
 @media (min-width: 1800px) {
     .container {
         max-width: 90rem !important;
+    }
+
+    .heading-card-packages {
+        font-size: 1.2rem;
     }
 }
