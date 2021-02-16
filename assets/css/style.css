@@ -322,6 +322,16 @@ li.nav-item {
     font-size: 1.1rem;
 }
 
+.card-img {
+    box-shadow:0 4px .6rem 0 rgba(0, 0, 0, 0.3);
+    transition: all .2s ease-in;
+}
+
+.card-img:hover {
+    box-shadow: 0 .6rem 1.1rem 0 rgba(0, 0, 0, 0.3);
+    transform: translateY(-4px);
+}
+
 /*------------------Footer--------------------------*/
 
 footer {
