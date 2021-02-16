@@ -665,6 +665,10 @@ footer {
         width: 50%;
     }
 
+    .container {
+        max-width: 1140px;
+    }
+
 }
 
 /* for larger screens DESKTOP: 1800px min*/
