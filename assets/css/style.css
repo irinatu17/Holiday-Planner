@@ -331,6 +331,24 @@ li.nav-item {
     margin-bottom: 2.6rem;
 }
 
+.contact-link:link,
+.contact-link:visited{
+    color: rgb(20, 20, 20);
+    font-size: 1.1rem;
+    text-shadow: 0 1px 2px  #f7c10f94;
+    transition: all .2s;
+}
+
+.contact-link:hover {
+    text-shadow: 0 2px 5px  #f7c10f;
+    text-decoration: none;
+}
+
+.travel-packages-paragraph {
+    font-size: 1.1rem;
+}
+
+
 /*------------------Footer--------------------------*/
 
 footer {
@@ -707,7 +725,8 @@ footer {
         max-width: 90rem !important;
     }
 
-    .heading-card-packages {
+    .heading-card-packages,
+    .travel-packages-paragraph {
         font-size: 1.2rem;
     }
 }
