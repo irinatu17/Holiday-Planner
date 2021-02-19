@@ -444,6 +444,9 @@ footer {
     text-align: left;
 }
 
+.bookingform input, .bookingform textarea {
+
+}
 /*----------------Info Window---------------*/
 
 #info-content {

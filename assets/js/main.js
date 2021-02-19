@@ -19,7 +19,6 @@ function scrollFunction() {
 };
 
 $(document).ready(function() {
-
     // Globe-spinner loading 
     $(window).on("load", function () {
         $("#spinner-overlay-wrapper").fadeOut();
