@@ -1,6 +1,11 @@
 # Holiday planner
 Interactive Front-End Milestone Project - Code Institute
 
+The live website can be viewed [here](https://irinatu17.github.io/Holiday-Planner/)         
+
+
+<img src="https://i.ibb.co/F63RnRQ/holiday-planner-mockup.png" alt="mockup" target="_blank" rel="noopener" width="850">
+
 TravelWithLove is a single page application that uses Google Maps API to allow users to search for their next holiday destination. The users can search for different destinations all around the world and find accommodation, restaurants, attractions and shops by clicking at the categories. The application also allows the users to get detailed information (name, address, contact number, rating and a link to external websites) of the chosen establishment by clicking at the marker. As well as that, the website gives the users a choice of planning the holiday by themselves by using the map section or selecting the all-inclusive travel packages with detailed description. Additionally, website allows the user to contact TravelWithLove management team to book the tour or ask a question.
 ## UX
 
