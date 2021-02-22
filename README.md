@@ -7,9 +7,37 @@ The live website can be viewed [here](https://irinatu17.github.io/Holiday-Planne
 <img src="https://i.ibb.co/F63RnRQ/holiday-planner-mockup.png" alt="mockup" target="_blank" rel="noopener" width="850">
 
 TravelWithLove is a single page application that uses Google Maps API to allow users to search for their next holiday destination. The users can search for different destinations all around the world and find accommodation, restaurants, attractions and shops by clicking at the categories. The application also allows the users to get detailed information (name, address, contact number, rating and a link to external websites) of the chosen establishment by clicking at the marker. As well as that, the website gives the users a choice of planning the holiday by themselves by using the map section or selecting the all-inclusive travel packages with detailed description. Additionally, website allows the user to contact TravelWithLove management team to book the tour or ask a question.
-## UX
 
-### User stories
+
+
+## Table of Contents
+1. [**UX**](#ux)
+    - [**User Stories**](#user-stories)
+    - [**Strategy**](#strategy)
+    - [**Scope**](#scope)
+    - [**Structure**](#structure)
+    - [**Skeleton**](#skeleton)
+    - [**Surface**](#surface)
+2. [**Technologies**](#technologies)
+    - [**Languages**](#languages)
+    - [**Libraries and Frameworks**](#libraries-and-frameworks)
+    - [**Tools**](#tools)
+3. [**Features**](#features)
+    - [**Existing Features**](#existing-features)
+    - [**Features Left to Implement**](#features-left-to-implement)
+4. [**Testing**](#testing)
+5. [**Deployment**](#deployment)
+6. [**Credits**](#credits)
+    - [**Content**](#content)
+    - [**Media**](#media)
+    - [**Code**](#code)
+    - [**Acknowledgements**](#acknowledgements)
+7. [**Disclaimer**](#disclaimer)
+
+---
+
+## UX
+### User Stories
 As a traveller, I want to find a hotel in my next holiday destination.
 
 - As a traveller, I want to see what attractions are in the city where I think to spend my holidays, so I can decide what to do before I get there, for example, visit museums, parks or cinemas.
@@ -41,7 +69,11 @@ Wireframes can be found [here](https://github.com/irinatu17/holiday-planner/blob
 
 ### Surface
 
-The combination of blue and yellow colours was chosen to create a sleek, calm and reliable feel. As well as the idea of using different shades of white, and different shades was chosen to give more space and volume. The colour scheme is consistent and does not hinder readability in any way.
+The combination of blue and yellow colours was chosen to create a sleek, calm and reliable feel. As well as the idea of using different shades of white, and different shades was chosen to give more space and volume. The colour scheme is consistent and does not hinder readability in any way.    
+
+<div align="right">
+    <b><a href="#table-of-contents">↥ Back To Top</a></b>
+</div>
 
 ## Technologies
 1. HTML. This project uses HTML to build the foundation of the website, including links to CSS and JavaScript scripts.
