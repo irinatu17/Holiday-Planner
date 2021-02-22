@@ -208,5 +208,13 @@ This is a list of some websites that helped me during development to get some in
 As well, I would like to thank my mentor Rahul Lakhanpal and all the tutors in the Code Institute for their help, advice and support throughout the project.
 
 
-**This is for educational use only.**
+---
+
+## Disclaimer
+This site is made for **educational purposes** only.   
+
+<div align="right">
+    <b><a href="#table-of-contents">↥ Back To Top</a></b>
+</div>
+
 
