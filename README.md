@@ -178,16 +178,40 @@ This site was tested across multiple browsers (Chrome, Internet Explorer, FireFo
 - JS was validated using [JSHint](https://jshint.com/)
 
 As well as the testing described, I asked my friends and family to have a look and check out the website on their devices and send me some feedback. The interesting issue that I got at that stage was that some people wanted to enter the country, not the city, and this confused users. In order to fix this issue and enhance UX, I changed the placeholder for the search box, asking the user to enter the city to begin using the map. Another issue found at this point was when the user clicks at the “Read more” button under one of the packages, and all three paragraphs of the row appeared, despite the text of the other two was hidden. To fix this issue and to improve UX, the Bootstrap’s “card-desk” class was removed and all the three cards in a line were placed in the different columns.
+
+<div align="right">
+    <b><a href="#table-of-contents">↥ Back To Top</a></b>
+</div>
+
 ## Deployment
-A new repository was created on GitHub, then micro commits were made after every important feature of the website throughout the project development.
+This site is hosted using **GitHub pages**, deployed directly from the master branch, the live version can be found [here](https://irinatu17.github.io/holiday-planner/).    
 
-This site is hosted using GitHub pages, deployed directly from the master branch and can be viewed via GitHub Pages [here](https://irinatu17.github.io/holiday-planner/).
+The deployed version of the site is the most current version in the repository.     
+To deploy this page to GitHub Pages from its GitHub repository the following steps have to be made:     
+1. From the menu items near the top of the page, select **Settings**
+2. Scroll down to the **GitHub Pages** section
+3. Under **Source** click the drop-down menu labelled None and select **Master Branch**.   
+On selecting Master Branch the page will be automatically refreshed and the website is now deployed
+5. Scroll back down to the **GitHub Pages** section in **Settings** to retrieve the link to the deployed website.     It may take a short time to go live, but typically less than 60 seconds
 
-The deployed site updates automatically upon new commits to the master branch.
+### How to run locally
+You can clone this repository directly into the editor of your choice by pasting the following command into the terminal:      
+`git clone https://github.com/irinatu17/holiday-planner.git`    
+Alternatively, you to **clone** this project from GitHub follow the steps:
+1. Under the repository name, click **Clone or download**
+2. In the **Clone with HTTPs section**, copy the clone URL for the repository
+3. In your local IDE open **Git Bash**
+4. Change the current working directory to the location where you want the cloned directory to be made
+5. Type `git clone`, and then paste the URL you copied in Step 2   
+`git clone https://github.com/irinatu17/holiday-planner.git`    
+6. Press Enter. Your local clone will be created   
 
-In order for the website to deploy correctly on GitHub pages, the landing page is named index.html.
+Further reading and troubleshooting on cloning a repository from GitHub can be found [here](https://docs.github.com/en/github/creating-cloning-and-archiving-repositories/cloning-a-repository).
+<div align="right">
+    <b><a href="#table-of-contents">↥ Back To Top</a></b>
+</div>
 
-To run locally, you can clone this repository directly into the editor of your choice by pasting git clone https://github.com/irinatu17/holiday-planner.git into your terminal. To cut ties with this GitHub repository, type git remote rm origin into the terminal.
+---
 ## Credits
 ### Content
 All the content in the "About" and the "Travel packages" sections of this website were written by me.
