@@ -38,19 +38,19 @@ TravelWithLove is a single page application that uses Google Maps API to allow u
 
 ## UX
 ### User Stories
-As a traveller, I want to find a hotel in my next holiday destination.
+- As a user, I want to find a hotel for my next holiday destination.
 
-- As a traveller, I want to see what attractions are in the city where I think to spend my holidays, so I can decide what to do before I get there, for example, visit museums, parks or cinemas.
+- As a user, I want to see what attractions are in the city where I think to spend my holidays, so that I can decide what to do before I get there, for example, visit museums, parks or cinemas.
 
-- As a traveller, I want to book a hotel in the city centre for my next holiday, so I want to visually compare locations of several hotels that I picked, checking with the map.
+- As a user, I want to book a hotel in the city centre for my next holiday, so that I want to visually compare locations of several hotels that I picked, checking on the map.
 
-- As a traveller, I want to check out different restaurants that are nearby in the city where I live, so I can choose one to visit soon.
+- As a user, I want to check out different restaurants that are nearby in the city where I live, so that I can choose one to visit soon.
 
-- As a traveller, I want to see if there are any shops nearby and what type of shops are in the town I am currently in during my holidays, so I can decide which one to visit.
+- As a user, I want to see if there are any shops nearby and what type of shops are in the town I am currently in during my holidays, so that I can decide which one to visit.
 
-- As a traveller, I want to book all-inclusive tour, so that I will not need to care about organising flights, accommodation and entertainment by myself.
+- As a user, I want to book all-inclusive tour, so that I will not need to care about organising flights, accommodation and entertainment by myself.
 
-- As a busy person, who spends almost all the time working, I have no time for planning my holidays, so I want to contact the travel agency directly to discuss and organise my next holiday and book one of the all-inclusive travel packages according to my personal preferences
+- As a user, who spends almost all the time working, I have no time for planning my holidays, so I want to contact the travel agency directly to discuss and organise my next holiday and book one of the all-inclusive travel packages according to my personal preferences.
 
 ### Strategy
 My goal in design was to make it minimalistic, simple to access information on the site, as well as to give the users the feeling of reliability, security and positiveness.
