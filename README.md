@@ -76,19 +76,31 @@ The combination of blue and yellow colours was chosen to create a sleek, calm an
 </div>
 
 ## Technologies
-1. HTML. This project uses HTML to build the foundation of the website, including links to CSS and JavaScript scripts.
+### Languages
+- [HTML](https://developer.mozilla.org/en-US/docs/Web/HTML) - to build the foundation of the project.
+- [CSS](https://developer.mozilla.org/en-US/docs/Web/CSS) - to create custom styles.
+- [JavaScript](https://www.javascript.com/) - to call on the Google Maps and Places API to include the map and perform the functionality of the website(DOM manipulation).
 
-2. CSS. This project uses CSS to style the website.
+### Libraries and Frameworks
+- [Bootstrap](https://www.bootstrapcdn.com/) - as the front-end framework for layout and design.
+- [Google Fonts](https://fonts.google.com/) - to import fonts.
+- [FontAwesome](https://fontawesome.com/) - to provide icons used across the project. 
+- [JQuery](https://jquery.com/) - to simplify DOM manipulation and to initialize Bootstrap functions.
+- [Google Maps JavaScript API](https://developers.google.com/maps/documentation/javascript/overview)- to render the map.
+- [Google Places API](https://developers.google.com/places/web-service/overview)- to allow users to search a city using autocomplete function, search for different categories of establishments and get their names, addresses, contact numbers and websites.
 
-3. JavaScript This project uses JavaScript to call on the Google Maps and Places API to include the map and perform the functionality of this website.
+### Tools
+- [GitPod](https://www.gitpod.io/) - an online IDE for developing this project.
+- [VS Code](https://code.visualstudio.com/) - the primary IDE for developing the project at the later stages.
+- [Git](https://git-scm.com/) - for version control.
+- [GitHub](https://git-scm.com/) - for remotely storing project's code.
+- [TinyPng](https://tinypng.com/) - for compressing images.
+- [ImgBB](https://imgbb.com/) - to host images used in README.
+- [Balsamiq](https://balsamiq.com/) - to create wireframes.
 
-4. JQuery. This project uses the JQuery JavaScript library for the hover-over effects, toggling the "Readmore" button, showing and hiding the modals, as well as, it is used in some of the functions in maps.js.
-
-5. Bootstrap CSS and JS 4.3.1. This project uses the Bootstrap CSS and JavaScript library for the grid system, modals, cards and image carousel.
-
-6. Google Maps JavaScript API. This project uses the Google Maps JavaScript API to render the map.
-
-7. Google Places API. This project uses the Google Places API to allow users to search a city using autocomplete function, search for different categories of establishments and get their names, addresses, contact numbers and websites.
+<div align="right">
+    <b><a href="#table-of-contents">↥ Back To Top</a></b>
+</div>
 
 ## Features
 The navbar at the top of the page allows user to easily navigate throughout the webpage. It includes three parts: “About”, “Travel Packages” and “Contact us” that allows user to scroll to these sections, by clicking on the button. Logo “TravelWithLove” reloads the homepage by clicking on it. The navigation bar is shown only on the laptop and tablet screens and was removed from the mobile device in order to enhance UX after some testing was made, that from my prospective improves UX and gives more free space on screens with small resolutions.
