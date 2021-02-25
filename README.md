@@ -6,7 +6,7 @@ The live website can be viewed [here](https://irinatu17.github.io/Holiday-Planne
 
 <img src="https://i.ibb.co/F63RnRQ/holiday-planner-mockup.png" alt="mockup" target="_blank" rel="noopener" width="850">
 
-TravelWithLove is a single page application that uses Google Maps API to allow users to search for their next holiday destination. The users can search for different destinations all around the world and find accommodation, restaurants, attractions and shops by clicking at the categories. The application also allows the users to get detailed information (name, address, contact number, rating and a link to external websites) of the chosen establishment by clicking at the marker. As well as that, the website gives the users a choice of planning the holiday by themselves by using the map section or selecting the all-inclusive travel packages with detailed description. Additionally, website allows the user to contact TravelWithLove management team to book the tour or ask a question.
+**HolidayPlanner** is a single page application that uses Google Maps API to allow users to search for their next holiday destination. The users can search for different destinations all around the world and find accommodation, restaurants, attractions and shops by clicking at the categories. The application also allows the users to get detailed information (name, address, contact number, rating and a link to external websites) of the chosen establishment by clicking at the marker. As well as that, the website gives the users a choice of planning the holiday by themselves by using the map section or selecting the all-inclusive travel packages with detailed description. Additionally, website allows users to contact HolidayPlanner management team to book the tour or ask a question.
 
 
 
@@ -24,7 +24,6 @@ TravelWithLove is a single page application that uses Google Maps API to allow u
     - [**Tools**](#tools)
 3. [**Features**](#features)
     - [**Existing Features**](#existing-features)
-    - [**Features Left to Implement**](#features-left-to-implement)
 4. [**Testing**](#testing)
 5. [**Deployment**](#deployment)
 6. [**Credits**](#credits)
@@ -61,7 +60,7 @@ This website will be used by people, who want to find out what hotels, attractio
 
 ### Structure
 
-In the “Map” section, I wanted them to be able to quickly access different establishments, such as accommodation, restaurants, attractions and shops, in a chosen city, providing a short information and external links to these places. In the “about” section, I wanted to give some instructions for users and showcase that they have a choice to plan everything by themselves or use our service. As well as that, I provided some information about the ideas and principles of TravelWithLove company to persuade the user to book the tour.
+In the “Map” section, I wanted them to be able to quickly access different establishments, such as accommodation, restaurants, attractions and shops, in a chosen city, providing a short information and external links to these places. In the “How it works” section, I wanted to give some instructions for users and showcase that they have a choice to plan everything by themselves or use our service. As well as that, I provided some information about the ideas and principles of HolidayPlanner company to persuade the user to book the tour.
 
 ### Skeleton
 
@@ -69,7 +68,7 @@ Wireframes can be found [here](https://github.com/irinatu17/holiday-planner/blob
 
 ### Surface
 
-The combination of blue and yellow colours was chosen to create a sleek, calm and reliable feel. As well as the idea of using different shades of white, and different shades was chosen to give more space and volume. The colour scheme is consistent and does not hinder readability in any way.    
+The combination of **blue** and **yellow** colours was chosen to create a sleek, calm and reliable feel. As well as the idea of using different shades of white, and different shadows was chosen to give more space and volume. The colour scheme is consistent and does not hinder readability in any way.    
 
 <div align="right">
     <b><a href="#table-of-contents">↥ Back To Top</a></b>
@@ -103,23 +102,26 @@ The combination of blue and yellow colours was chosen to create a sleek, calm an
 </div>
 
 ## Features
-The navbar at the top of the page allows user to easily navigate throughout the webpage. It includes three parts: “About”, “Travel Packages” and “Contact us” that allows user to scroll to these sections, by clicking on the button. Logo “TravelWithLove” reloads the homepage by clicking on it. The navigation bar is shown only on the laptop and tablet screens and was removed from the mobile device in order to enhance UX after some testing was made, that from my prospective improves UX and gives more free space on screens with small resolutions.
+### Existing Features
+ - The **navbar** is fixed at the top of the page, allows user to easily navigate throughout the webpage. It includes following parts: "How it works", "Map", "Travel Packages" and "Contact" that allows user to scroll to these sections, by clicking on the link. Logo “HolidayPlanner” reloads the homepage by clicking on it.     
+On the smaller resolutions the navbar is collapsed into a burger icon. Menu links appear when the burger icon is clicked and collapse back, when clicked again.    
 
-A search bar with a placeholder “Enter the city to start…” uses the Google Places API and autocomplete provides a list of locations to search for.
+- The section **How it works** is static and displays the information about the main idea of the website with instructions about how to use it.
 
-The button group including the following buttons “Hotels”, “Restaurants”, “Attractions” and “Shopping” allows a user to choose the category for the nearby search, which will display markers on the map for the selected option.
+ - A **search bar** with a placeholder “Enter a city” uses the Google Places API and autocomplete provides a list of locations to search for.
 
-The icon information window, that appears when a user clicks on one of the markers, gives the user the ability to get more detailed information, displaying name, address, contact number, an external link to the website.
+ - The **button group** including the following buttons “Hotels”, “Restaurants”, “Attractions” and “Shopping” allows a user to choose the **category** for the search, which will display markers on the map for the selected option.
 
-The section “About” is static and displays the information about the main idea of the website.
+- The icon **information window**, that appears when a user clicks on one of the markers, gives the user the ability to get more detailed information, displaying name, address, contact number, an external link to the website.
 
-The image carousel displays 3 vertically centred responsive images when a user clicks on one of the cards in a “Travel Packages” section. It was made by combing modal and carousel components from Bootstrap.
+- The **image carousel** displays 3 vertically centred responsive images when a user clicks on one of the cards in a “Travel Packages” section. It was made by combing modal and carousel components from Bootstrap.
 
-The "Read more…" button toggles the paragraphs describing the travel package by using a smooth slide up or down animation.
+- The **Read more** button toggles the paragraphs describing the travel package by using a smooth slide up or down animation.
 
-The “Contact us” modal allows users to contact the TravelWithLove management by filling out the form. After submission and sending the e-mail the vertically centred pop-up appears, letting the user know that his enquiry was successfully sent.
+- The **Contact section** allows users to contact the company management by filling out the form. After submission and sending the e-mail the vertically centred pop-up appears, letting the user know that his/her enquiry was successfully sent.
 
-The buttons for social links allow users to open the websites in new tab by using 'target="_blank".
+- The **footer** contains the buttons for social links allow users to open the websites in new tab by using 'target="_blank".
+
 ## Testing
 
 ### User scenarios that were used for testing are detailed below:
