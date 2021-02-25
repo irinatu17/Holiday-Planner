@@ -121,14 +121,15 @@ On the smaller resolutions the navbar is collapsed into a burger icon. Menu link
 - The **Contact section** allows users to contact the company management by filling out the form. After submission and sending the e-mail the vertically centred pop-up appears, letting the user know that his/her enquiry was successfully sent.
 
 - The **footer** contains the buttons for social links allow users to open the websites in new tab by using 'target="_blank".
+- **Back to top** button allows a user to get back quickly to the top of the page.
 
 ## Testing
 
-### User scenarios that were used for testing are detailed below:
+### User scenarios that were used for testing are detailed below (manual testing):
 
 1. Search the city and autocomplete:
 
-i. Open the page, go to the “Map” section at the top of the site.
+i. Open the page, go to the “Map” section.
 
 ii. Enter a city (desired destination) into the search box and make sure that the autocomplete shows suggested cities.
 
@@ -136,7 +137,7 @@ iii. Click on one of the suggested letiants and verify that the map loads with t
 
 2. Display the hotels nearby:
 
-i. Go to the “Map” section at the top of the page.
+i. Go to the “Map” section.
 
 ii. Enter a city into the search input box in order to make the map centre on the chosen location.
 
@@ -144,7 +145,7 @@ iii. Click on the “Hotels” button of the button group and get the markers di
 
 3. Display info window:
 
-i. Go to the Map section at the top of the page.
+i. Go to the Map section.
 
 ii. Enter a city into the search input box in order to make the map centre on the chosen location.
 
@@ -160,8 +161,6 @@ ii. Click on the “Read more” button and get the paragraph with a text about 
 
 iii. Click on the “Read more” button again to hide the paragraph.
 
-iv. On the laptop device hover over the image to see information about number of days and the price.
-
 5. Display the image carousel:
 
 i. Go to the “Travel Packages" section.
@@ -172,9 +171,9 @@ iii. Click on the next and previous controls to show next and previous images re
 
 6. Contact form:
 
-i. Go to the "Contact Us" section in the footer.
+i. Go to the "Contact" section.
 
-ii. Try to submit the empty form and verify that an error message about the required fields appears.
+ii. Try to submit an empty form and verify that an error message about the required fields appears.
 
 iii. Try to submit the form with an invalid email address without using “@” and verify that a relevant error message appears.
 
@@ -182,16 +181,21 @@ iv. Try to submit the form with all inputs valid and verify that a success messa
 
 v. Get the pop-up window displayed in the centre of the screen, that shows that the enquiry was successfully submitted.
 
-All the links in the footer as well as the links to external websites in the info windows in the “Map” section will open in a new tab using 'target="_blank". All links have been manually tested to ensure that they are pointing to the correct destination.
+All the links in the footer as well as the links to external websites in the info windows in the “Map” section will open in a new tab using `target="_blank"`.   
+All links have been manually tested to ensure that they are pointing to the correct destination.
 
-This site was tested across multiple browsers (Chrome, Internet Explorer, FireFox) and on multiple mobile devices (iPhone 5, 6, 8, Samsung Galaxy, Sony Xperia), tablets(iPad) and laptops (with HiDPI and MDPI and touch screens), as well as on Google Chrome's developer tools to see how it looks across all the different device screen sizes to ensure compatibility and responsiveness.
+### Compatibility and Responsiveness
+This website had been being tested during the development across **multiple browsers** (Chrome, Safary, Opera, FireFox, Internet Explorer) and on **multiple devices**: mobile (iPhone 5, 6, 8, Samsung Galaxy, Sony Xperia), tablets(iPad, iPadPro) and laptops (with HiDPI and MDPI and touch screens), as well as on extra-large screen(1980 x 1080).     
+As well as on **Google Chrome's developer tools** to see how it looks across all the different device screen sizes to ensure compatibility and responsiveness.   
+I also used [Am I Responsive](http://ami.responsivedesign.is/) online tool for checking responsiveness on different devices.   
+Plenty of changes were made and necessary media queries added to make the website fully responsive.   
 
-### Validation ·
+### Validation 
 - HTML was validated using [W3C Markup Validation Service](https://validator.w3.org/#validate_by_input)
 - CSS was validated using [W3C CSS Validation Service](https://jigsaw.w3.org/css-validator/)
 - JS was validated using [JSHint](https://jshint.com/)
 
-As well as the testing described, I asked my friends and family to have a look and check out the website on their devices and send me some feedback. The interesting issue that I got at that stage was that some people wanted to enter the country, not the city, and this confused users. In order to fix this issue and enhance UX, I changed the placeholder for the search box, asking the user to enter the city to begin using the map. Another issue found at this point was when the user clicks at the “Read more” button under one of the packages, and all three paragraphs of the row appeared, despite the text of the other two was hidden. To fix this issue and to improve UX, the Bootstrap’s “card-desk” class was removed and all the three cards in a line were placed in the different columns.
+As well as the testing described, I asked my friends and family to have a look and check out the website on their devices and send me some feedback. The interesting issue that I got at that stage was that some people wanted to enter the country, not the city, and this confused users. In order to fix this issue and enhance UX, I changed the placeholder for the search box, asking the user to enter a city to begin using the map. Another issue found at this point was when the user clicks at the “Read more” button under one of the packages, and all three paragraphs of the row appeared, despite the text of the other two was hidden. To fix this issue and to improve UX, the Bootstrap’s “card-desk” class was removed and all the three cards in a line were placed in the different columns.
 
 <div align="right">
     <b><a href="#table-of-contents">↥ Back To Top</a></b>
