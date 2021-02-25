@@ -101,6 +101,8 @@ The combination of **blue** and **yellow** colours was chosen to create a sleek,
     <b><a href="#table-of-contents">↥ Back To Top</a></b>
 </div>
 
+---
+
 ## Features
 ### Existing Features
  - The **navbar** is fixed at the top of the page, allows user to easily navigate throughout the webpage. It includes following parts: "How it works", "Map", "Travel Packages" and "Contact" that allows user to scroll to these sections, by clicking on the link. Logo “HolidayPlanner” reloads the homepage by clicking on it.     
@@ -122,6 +124,12 @@ On the smaller resolutions the navbar is collapsed into a burger icon. Menu link
 
 - The **footer** contains the buttons for social links allow users to open the websites in new tab by using 'target="_blank".
 - **Back to top** button allows a user to get back quickly to the top of the page.
+
+<div align="right">
+    <b><a href="#table-of-contents">↥ Back To Top</a></b>
+</div>
+
+---
 
 ## Testing
 
@@ -201,6 +209,8 @@ As well as the testing described, I asked my friends and family to have a look a
     <b><a href="#table-of-contents">↥ Back To Top</a></b>
 </div>
 
+---
+
 ## Deployment
 This site is hosted using **GitHub pages**, deployed directly from the master branch, the live version can be found [here](https://irinatu17.github.io/holiday-planner/).    
 
@@ -231,15 +241,7 @@ Further reading and troubleshooting on cloning a repository from GitHub can be f
 
 ---
 ## Credits
-### Content
-All the content in the "About" and the "Travel packages" sections of this website were written by me.
-
-Significant part of the maps.js file JavaScript code has been taken from the Google Maps JavaScript API Documentation, then modified, customised and supplemented in accordance with the goals.
-### Media
-The background image was obtained from [Unsplash](https://unsplash.com/).
-
-Pictures in the “Travel packages” section were taken from free available Google images by searching them using 800x600 size parameters.
-### Acknowledgements
+### Code
 This is a list of some websites that helped me during development to get some inspiration, find information about technologies and features used or to find relevant examples: 
 1. W3schools
 2. Google Maps Platform Documentation 
@@ -247,8 +249,18 @@ This is a list of some websites that helped me during development to get some in
 4. Stack Overflow
 5. Dribble 
 
-As well, I would like to thank my mentor Rahul Lakhanpal and all the tutors in the Code Institute for their help, advice and support throughout the project.
+- Significant part of the maps.js file JavaScript code has been taken from the Google Maps JavaScript API Documentation, then modified, customised and supplemented in accordance with the goals.
+- The idea and code for **Loader** is taken and modidied from [Tim Nelson](https://github.com/TravelTimN) project.
+- I received inspiration for this project from [Advanced CSS And Sass course](https://www.udemy.com/course/advanced-css-and-sass/) of Jonas Schmedtman: the form styling, validation borders and submit button animation.
+### Content
+All the content in the "How it works" and the "Travel packages" sections of this website were written by me.
+### Media
+The hero image, all the images from "How it works" and background image of "Contact" section were obtained from [Unsplash](https://unsplash.com/).
 
+Pictures in the “Travel packages” section were taken from free available Google images.
+### Acknowledgements
+ I would like to thank everyone who has helped me throughout the development of this project: my mentor [Rahul Lakhanpal](https://www.rahullakhanpal.in/),
+ Code Institute tutors, fellow students, my friends and my family for the time, assistance and support!
 
 ---
 
