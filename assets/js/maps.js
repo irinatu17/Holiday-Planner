@@ -3,7 +3,8 @@ let map;
 let infoWindow;
 let placesService;
 let markers = [];
-let ireland = { lat: 53.2, lng: -9.0 };
+const ireland = { lat: 53.2, lng: -9.0 };
+const marker = "assets/images/marker.png";
 let autocomplete;
 let placeType;
 
@@ -98,12 +99,12 @@ function searchPlaces() {
       for (let i = 0; i < results.length; i++) {
         markers[i] = new google.maps.Marker({
           position: results[i].geometry.location,
+          icon: marker,
           animation: google.maps.Animation.DROP
         });
         markers[i].placeResult = results[i];
         google.maps.event.addListener(markers[i], 'click', showInfoWindow); //Show info window when user clicks on a marker
 
-        //google.maps.event.addListener(markers[i], 'click', showInfoWindow); Show info window when user clicks on a marker
         setTimeout(dropMarker(i), i * 100);
       }
 
